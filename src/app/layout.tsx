@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import './globals.css';
 import { cn } from '@/lib/utils';
 import { SidebarProvider, SidebarInset } from '@/components/ui/sidebar';
@@ -24,6 +25,13 @@ export default function RootLayout({
         <link
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
+        />
+        <Script
+          id="adsbygoogle-script"
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2279227107562302"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
         />
       </head>
       <body className={cn('font-body antialiased', 'min-h-screen bg-background')}>
