@@ -39,7 +39,7 @@ export default function InstagramFeedPreview({ dictionary }: { dictionary: any }
             {t.title}
           </div>
           <a
-            href="https://www.instagram.com/ngobroldigital/"
+            href="https://www.instagram.com/digimediakomunikapt/"
             target="_blank"
             rel="noopener noreferrer"
             className={buttonVariants({ variant: "outline" })}
