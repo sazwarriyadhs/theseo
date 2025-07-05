@@ -186,6 +186,10 @@
       "generatingImage": "Generating..."
     },
     "error": "An error occurred while generating Instagram posts. Please try again.",
-    "errorTitle": "Generation Failed"
+    "errorTitle": "Generation Failed",
+    "feedPreview": {
+      "title": "Instagram Feed Preview",
+      "description": "See how your generated posts might look on your profile."
+    }
   }
 }

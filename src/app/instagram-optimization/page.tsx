@@ -1,4 +1,6 @@
 import InstagramGeneratorClientPage from "@/components/instagram-generator-client";
+import InstagramFeedPreview from "@/components/instagram-feed-preview";
+import { Separator } from "@/components/ui/separator";
 
 export default function InstagramOptimizationPage() {
     const dictionary = {
@@ -21,7 +23,17 @@ export default function InstagramOptimizationPage() {
             generatingImage: "Generating..."
         },
         error: "An error occurred while generating Instagram posts. Please try again.",
-        errorTitle: "Generation Failed"
+        errorTitle: "Generation Failed",
+        feedPreview: {
+          title: "Instagram Feed Preview",
+          description: "See how your generated posts might look on your profile."
+        }
     };
-    return <InstagramGeneratorClientPage dictionary={dictionary} />;
+    return (
+        <div className="space-y-8">
+            <InstagramGeneratorClientPage dictionary={dictionary} />
+            <Separator />
+            <InstagramFeedPreview dictionary={dictionary.feedPreview} />
+        </div>
+    );
 }

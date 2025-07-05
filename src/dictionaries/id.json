@@ -186,6 +186,10 @@
       "generatingImage": "Membuat..."
     },
     "error": "Terjadi kesalahan saat membuat postingan Instagram. Silakan coba lagi.",
-    "errorTitle": "Pembuatan Gagal"
+    "errorTitle": "Pembuatan Gagal",
+    "feedPreview": {
+      "title": "Pratinjau Feed Instagram",
+      "description": "Lihat bagaimana tampilan postingan Anda di profil Anda."
+    }
   }
 }
