@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Youtube, PlayCircle, AlertTriangle } from 'lucide-react';
 import NextImage from 'next/image';
-import { Button } from './ui/button';
+import { buttonVariants } from './ui/button';
 import Link from 'next/link';
 import { Skeleton } from './ui/skeleton';
 
@@ -97,11 +97,14 @@ export default function YouTubeFeedPreview({ dictionary }: { dictionary: any }) 
              <p className="text-sm max-w-md mt-2">
                The YouTube Data API is not enabled for your project. Please click the button below to go to the Google Cloud Console and enable it.
              </p>
-             <Button asChild className="mt-4">
-                <Link href={url} target="_blank" rel="noopener noreferrer">
-                    Enable YouTube API
-                </Link>
-            </Button>
+             <Link
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={buttonVariants({ variant: 'default', className: 'mt-4' })}
+              >
+                Enable YouTube API
+              </Link>
             <p className="text-xs text-muted-foreground mt-2">(After enabling, you may need to wait a few minutes and refresh this page).</p>
            </div>
          )
@@ -162,11 +165,14 @@ export default function YouTubeFeedPreview({ dictionary }: { dictionary: any }) 
                 <Youtube className="h-6 w-6 text-primary" />
                 {t.title}
             </div>
-            <Button asChild variant="outline">
-                <Link href="https://www.youtube.com/@NgobrolDigitalYuk" target="_blank" rel="noopener noreferrer">
-                    {t.visitChannel}
-                </Link>
-            </Button>
+            <Link
+              href="https://www.youtube.com/@NgobrolDigitalYuk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={buttonVariants({ variant: "outline" })}
+            >
+              {t.visitChannel}
+            </Link>
         </CardTitle>
         <CardDescription>{t.description}</CardDescription>
       </CardHeader>
