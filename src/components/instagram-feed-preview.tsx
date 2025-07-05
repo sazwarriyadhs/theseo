@@ -5,6 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Instagram, Heart, MessageCircle } from 'lucide-react';
 import NextImage from 'next/image';
 import { buttonVariants } from './ui/button';
+import Link from 'next/link';
 
 type MockPost = {
   id: number;
@@ -38,14 +39,14 @@ export default function InstagramFeedPreview({ dictionary }: { dictionary: any }
             <Instagram className="h-6 w-6 text-primary" />
             {t.title}
           </div>
-          <a
+          <Link
             href="https://www.instagram.com/digimediakomunikapt/"
             target="_blank"
             rel="noopener noreferrer"
             className={buttonVariants({ variant: "outline" })}
           >
             {t.visitProfile}
-          </a>
+          </Link>
         </CardTitle>
         <CardDescription>{t.description}</CardDescription>
       </CardHeader>
