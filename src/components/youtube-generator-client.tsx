@@ -186,17 +186,20 @@ export default function YouTubeGeneratorClientPage({ dictionary }: { dictionary:
               <h3 className="text-lg font-semibold flex items-center gap-2 mb-4"><Clapperboard className="h-5 w-5" /> {t.results.scenesTitle}</h3>
               <div className="space-y-6">
                 {scenes.map((scene, index) => (
-                  <div key={scene.scene} className="grid md:grid-cols-2 gap-4 items-start p-4 border rounded-lg">
-                    <div className="space-y-3">
-                       <h4 className="font-semibold">{t.results.scene} {scene.scene}</h4>
-                       <p className="text-muted-foreground">{scene.narration}</p>
-                       <div className="flex items-center gap-2">
-                         <p className="text-sm bg-secondary text-secondary-foreground p-2 rounded-md font-mono text-xs flex-1">
-                          <span className="font-bold">Prompt:</span> {scene.imagePrompt}
-                         </p>
-                          <Button variant="ghost" size="icon" onClick={() => handleCopy(scene.imagePrompt, `prompt-${index}`)}>
-                            {copiedIndex === `prompt-${index}` ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
-                          </Button>
+                  <div key={scene.scene} className="grid md:grid-cols-2 gap-6 items-start p-4 border rounded-lg">
+                    <div className="space-y-4">
+                       <h4 className="font-semibold text-lg">{t.results.scene} {scene.scene}</h4>
+                       <p className="text-muted-foreground leading-relaxed">{scene.narration}</p>
+                       <div className="space-y-2">
+                          <h4 className="font-semibold">Image Prompt</h4>
+                          <div className="flex items-start gap-2">
+                            <p className="text-sm bg-secondary text-secondary-foreground p-3 rounded-md font-mono text-xs flex-1">
+                              {scene.imagePrompt}
+                            </p>
+                              <Button variant="ghost" size="icon" onClick={() => handleCopy(scene.imagePrompt, `prompt-${index}`)}>
+                                {copiedIndex === `prompt-${index}` ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
+                              </Button>
+                          </div>
                        </div>
                     </div>
                     <div className="flex flex-col items-center justify-center bg-secondary rounded-lg aspect-video p-4">

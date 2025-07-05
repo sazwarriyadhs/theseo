@@ -31,7 +31,6 @@ import {
   generateImage
 } from '@/ai/flows/generate-image';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Separator } from '@/components/ui/separator';
 import NextImage from 'next/image';
 
 const formSchema = z.object({
@@ -164,30 +163,28 @@ export default function InstagramGeneratorClientPage({ dictionary }: { dictionar
           {posts.map((post, index) => (
             <Card key={index}>
               <CardContent className="p-4 grid md:grid-cols-2 gap-6 items-start">
-                  <div className="space-y-4">
+                  <div className="space-y-6">
                       <div>
-                          <h4 className="font-semibold text-lg mb-2">{t.results.caption}</h4>
-                           <div className="flex items-start gap-2">
-                                <p className="text-muted-foreground whitespace-pre-wrap flex-1">{post.caption}</p>
-                                <Button variant="ghost" size="icon" onClick={() => handleCopy(post.caption, `caption-${index}`)}>
-                                    {copiedStates[`caption-${index}`] ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
-                                </Button>
-                           </div>
+                          <div className="flex justify-between items-center mb-2">
+                              <h4 className="font-semibold text-lg">{t.results.caption}</h4>
+                              <Button variant="ghost" size="icon" onClick={() => handleCopy(post.caption, `caption-${index}`)}>
+                                  {copiedStates[`caption-${index}`] ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
+                              </Button>
+                          </div>
+                          <p className="text-muted-foreground whitespace-pre-wrap text-sm">{post.caption}</p>
                       </div>
-                      <Separator />
                        <div>
-                          <h4 className="font-semibold text-lg mb-2">{t.results.hashtags}</h4>
-                           <div className="flex items-start gap-2">
-                                <p className="text-muted-foreground flex-1">{post.hashtags}</p>
-                                <Button variant="ghost" size="icon" onClick={() => handleCopy(post.hashtags, `hashtags-${index}`)}>
-                                    {copiedStates[`hashtags-${index}`] ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
-                                </Button>
-                           </div>
+                          <div className="flex justify-between items-center mb-2">
+                            <h4 className="font-semibold text-lg">{t.results.hashtags}</h4>
+                            <Button variant="ghost" size="icon" onClick={() => handleCopy(post.hashtags, `hashtags-${index}`)}>
+                                {copiedStates[`hashtags-${index}`] ? <Check className="h-4 w-4 text-green-500" /> : <Copy className="h-4 w-4" />}
+                            </Button>
+                          </div>
+                          <p className="text-muted-foreground text-sm">{post.hashtags}</p>
                       </div>
-                      <Separator />
                       <div>
                           <h4 className="font-semibold text-lg mb-2">{t.results.imagePrompt}</h4>
-                          <p className="text-sm bg-secondary text-secondary-foreground p-2 rounded-md font-mono text-xs flex-1">
+                          <p className="text-sm bg-secondary text-secondary-foreground p-3 rounded-md font-mono text-xs">
                               {post.imagePrompt}
                           </p>
                       </div>

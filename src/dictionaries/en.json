@@ -16,7 +16,7 @@
     "googleAnalytics": "Google Analytics",
     "googleAdsense": "Google Adsense",
     "youtubeOptimization": "YouTube Optimization",
-    "instagramOptimization": "AI Instagram Generator",
+    "instagramOptimization": "Instagram Optimization",
     "settings": "Settings",
     "support": "Support"
   },
@@ -180,7 +180,7 @@
       "title": "Generated Instagram Posts",
       "caption": "Caption",
       "hashtags": "Hashtags",
-      "imagePrompt": "Image Idea",
+      "imagePrompt": "Image Prompt",
       "generateImage": "Generate Image",
       "generatingImage": "Generating..."
     },
