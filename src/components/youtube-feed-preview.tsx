@@ -84,11 +84,23 @@ export default function YouTubeFeedPreview({ dictionary }: { dictionary: any }) 
     }
     
     if (error) {
+       const urlRegex = /(https?:\/\/[^\s]+)/;
+       const urlMatch = error.match(urlRegex);
+       const url = urlMatch ? urlMatch[0] : null;
+       const message = url ? error.replace(urlRegex, '') : error;
+
        return (
         <div className="col-span-full flex flex-col items-center justify-center text-center text-destructive bg-destructive/10 p-8 rounded-lg">
           <AlertTriangle className="h-10 w-10 mb-4" />
           <h4 className="text-lg font-semibold">Could not load videos</h4>
-          <p className="text-sm max-w-md">{error}</p>
+          <p className="text-sm max-w-md">{message}</p>
+          {url && (
+             <Button asChild variant="link" className="mt-2 text-destructive hover:text-destructive/80">
+                <Link href={url} target="_blank" rel="noopener noreferrer">
+                    Click here to enable the API
+                </Link>
+            </Button>
+          )}
         </div>
       );
     }
