@@ -130,6 +130,7 @@
   },
   "youtubeOptimizationPage": {
     "title": "YouTube Channel Optimization",
-    "description": "Integration and optimization suggestions for your YouTube channel."
+    "description": "Integration and optimization suggestions for your YouTube channel.",
+    "visitChannel": "Visit Channel"
   }
 }

@@ -1,14 +1,24 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Youtube } from "lucide-react";
+import { Youtube, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function YouTubeOptimizationPage() {
   return (
     <div className="max-w-4xl mx-auto">
       <Card>
         <CardHeader>
-          <CardTitle className="flex items-center gap-2 text-2xl">
-            <Youtube className="h-6 w-6 text-primary" />
-            YouTube Channel Optimization
+          <CardTitle className="flex items-center justify-between gap-2 text-2xl">
+            <span className="flex items-center gap-2">
+              <Youtube className="h-6 w-6 text-primary" />
+              YouTube Channel Optimization
+            </span>
+            <Button asChild variant="outline" size="sm">
+              <Link href="https://www.youtube.com/@NgobrolDigitalYuk" target="_blank">
+                <ExternalLink className="mr-2 h-4 w-4" />
+                Visit Channel
+              </Link>
+            </Button>
           </CardTitle>
           <CardDescription className="text-base">
             Integration and optimization suggestions for your YouTube channel.
