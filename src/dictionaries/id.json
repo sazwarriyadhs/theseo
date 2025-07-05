@@ -164,7 +164,12 @@
       "generatingImage": "Menghasilkan..."
     },
     "error": "Terjadi kesalahan saat membuat aset video. Silakan coba lagi.",
-    "errorTitle": "Gagal Membuat"
+    "errorTitle": "Gagal Membuat",
+    "feedPreview": {
+      "title": "Pratinjau Channel YouTube",
+      "description": "Lihat pratinjau tampilan video Anda di channel.",
+      "visitChannel": "Kunjungi Channel"
+    }
   },
   "instagramOptimizationPage": {
     "title": "Generator Postingan Instagram AI",

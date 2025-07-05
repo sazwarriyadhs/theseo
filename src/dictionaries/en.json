@@ -164,7 +164,12 @@
       "generatingImage": "Generating..."
     },
     "error": "An error occurred while generating video assets. Please try again.",
-    "errorTitle": "Generation Failed"
+    "errorTitle": "Generation Failed",
+    "feedPreview": {
+      "title": "YouTube Channel Preview",
+      "description": "See a preview of how your videos could look on your channel.",
+      "visitChannel": "Visit Channel"
+    }
   },
   "instagramOptimizationPage": {
     "title": "AI Instagram Post Generator",

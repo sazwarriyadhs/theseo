@@ -1,4 +1,6 @@
 import YouTubeGeneratorClientPage from '@/components/youtube-generator-client';
+import { Separator } from '@/components/ui/separator';
+import YouTubeFeedPreview from '@/components/youtube-feed-preview';
 
 export default function YouTubeOptimizationPage() {
     const dictionary = {
@@ -22,7 +24,18 @@ export default function YouTubeOptimizationPage() {
             generatingImage: "Generating..."
         },
         error: "An error occurred while generating video assets. Please try again.",
-        errorTitle: "Generation Failed"
+        errorTitle: "Generation Failed",
+        feedPreview: {
+            title: "YouTube Channel Preview",
+            description: "See a preview of how your videos could look on your channel.",
+            visitChannel: "Visit Channel"
+        }
     };
-    return <YouTubeGeneratorClientPage dictionary={dictionary} />;
+    return (
+        <div className="space-y-8">
+            <YouTubeGeneratorClientPage dictionary={dictionary} />
+            <Separator />
+            <YouTubeFeedPreview dictionary={dictionary.feedPreview} />
+        </div>
+    );
 }
