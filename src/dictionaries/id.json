@@ -147,12 +147,12 @@
   "googleSearchConsolePage": {
     "title": "Google Search Console",
     "description": "Pantau kinerja situs Anda di Google Search dan dapatkan wawasan untuk meningkatkan visibilitas Anda.",
-    "statusTitle": "Siap untuk Verifikasi",
-    "statusDescription": "Situs Anda siap untuk ditambahkan dan diverifikasi di Google Search Console.",
+    "statusTitle": "File Verifikasi Siap",
+    "statusDescription": "File verifikasi Google Search Console Anda sudah siap. Sekarang Anda dapat menyelesaikan proses verifikasi.",
     "verificationMethodTitle": "Metode Verifikasi",
-    "verificationMethodDescription": "Cara yang disarankan untuk memverifikasi kepemilikan situs Anda adalah melalui integrasi Google Analytics Anda.",
-    "analyticsMethodTitle": "Metode Google Analytics",
-    "analyticsMethodDescription": "Karena Anda telah mengintegrasikan Google Analytics, Anda dapat menggunakannya untuk memverifikasi situs Anda secara instan. Buka Google Search Console, tambahkan domain Anda, dan pilih metode verifikasi Google Analytics.",
+    "verificationMethodDescription": "Metode verifikasi file HTML sekarang telah dikonfigurasi. Google akan mencari file ini untuk mengonfirmasi kepemilikan Anda.",
+    "htmlFileMethodTitle": "Metode File HTML",
+    "htmlFileMethodDescription": "File verifikasi telah ditambahkan ke direktori root situs Anda. Lanjutkan dengan verifikasi di situs web Google Search Console.",
     "visitSearchConsole": "Kunjungi Search Console"
   },
   "youtubeOptimizationPage": {

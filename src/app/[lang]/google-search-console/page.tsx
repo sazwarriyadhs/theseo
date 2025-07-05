@@ -37,10 +37,10 @@ export default async function GoogleSearchConsolePage({ params: { lang } }: { pa
             </p>
             <Card className="bg-secondary">
               <CardHeader>
-                <CardTitle className="text-xl">{t.analyticsMethodTitle}</CardTitle>
+                <CardTitle className="text-xl">{t.htmlFileMethodTitle}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">{t.analyticsMethodDescription}</p>
+                <p className="text-muted-foreground">{t.htmlFileMethodDescription}</p>
                  <Button asChild className="mt-4">
                     <Link href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">
                         {t.visitSearchConsole}

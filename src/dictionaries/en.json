@@ -147,12 +147,12 @@
   "googleSearchConsolePage": {
     "title": "Google Search Console",
     "description": "Monitor your site's performance in Google Search and get insights to improve your visibility.",
-    "statusTitle": "Ready for Verification",
-    "statusDescription": "Your site is ready to be added and verified in Google Search Console.",
+    "statusTitle": "Verification File Ready",
+    "statusDescription": "Your Google Search Console verification file is in place. You can now complete the verification process.",
     "verificationMethodTitle": "Verification Method",
-    "verificationMethodDescription": "The recommended way to verify your site ownership is through your Google Analytics integration.",
-    "analyticsMethodTitle": "Google Analytics Method",
-    "analyticsMethodDescription": "Since you have already integrated Google Analytics, you can use it to instantly verify your site. Go to Google Search Console, add your domain, and choose the Google Analytics verification method.",
+    "verificationMethodDescription": "The HTML file verification method is now configured. Google will look for this file to confirm your ownership.",
+    "htmlFileMethodTitle": "HTML File Method",
+    "htmlFileMethodDescription": "The verification file has been added to your site's root directory. Proceed with the verification on the Google Search Console website.",
     "visitSearchConsole": "Visit Search Console"
   },
   "youtubeOptimizationPage": {
