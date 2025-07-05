@@ -84,23 +84,35 @@ export default function YouTubeFeedPreview({ dictionary }: { dictionary: any }) 
     }
     
     if (error) {
+       const isApiDisabledError = /API.*?not been used.*?or it is disabled/.test(error);
        const urlRegex = /(https?:\/\/[^\s]+)/;
        const urlMatch = error.match(urlRegex);
        const url = urlMatch ? urlMatch[0] : null;
-       const message = url ? error.replace(urlRegex, '') : error;
 
+       if (isApiDisabledError && url) {
+         return (
+           <div className="col-span-full flex flex-col items-center justify-center text-center text-amber-800 dark:text-amber-200 bg-amber-50 dark:bg-amber-950/50 p-8 rounded-lg border border-amber-200 dark:border-amber-800">
+             <AlertTriangle className="h-10 w-10 mb-4 text-amber-500" />
+             <h4 className="text-lg font-semibold">Action Required: Enable YouTube API</h4>
+             <p className="text-sm max-w-md mt-2">
+               The YouTube Data API is not enabled for your project. Please click the button below to go to the Google Cloud Console and enable it.
+             </p>
+             <Button asChild className="mt-4">
+                <Link href={url} target="_blank" rel="noopener noreferrer">
+                    Enable YouTube API
+                </Link>
+            </Button>
+            <p className="text-xs text-muted-foreground mt-2">(After enabling, you may need to wait a few minutes and refresh this page).</p>
+           </div>
+         )
+       }
+
+       // Fallback for other errors
        return (
         <div className="col-span-full flex flex-col items-center justify-center text-center text-destructive bg-destructive/10 p-8 rounded-lg">
           <AlertTriangle className="h-10 w-10 mb-4" />
           <h4 className="text-lg font-semibold">Could not load videos</h4>
-          <p className="text-sm max-w-md">{message}</p>
-          {url && (
-             <Button asChild variant="link" className="mt-2 text-destructive hover:text-destructive/80">
-                <Link href={url} target="_blank" rel="noopener noreferrer">
-                    Click here to enable the API
-                </Link>
-            </Button>
-          )}
+          <p className="text-sm max-w-md">{error}</p>
         </div>
       );
     }
