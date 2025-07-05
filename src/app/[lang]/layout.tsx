@@ -19,6 +19,9 @@ export async function generateMetadata({ params }: { params: { lang: Locale } })
   return {
     title: dictionary.metadata.title,
     description: dictionary.metadata.description,
+    verification: {
+      google: "p8U9LOaanxx5RtM9lWmjFnHs3RJ1Lpd_5n9XMtSrwZY",
+    }
   }
 }
 

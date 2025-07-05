@@ -147,12 +147,12 @@
   "googleSearchConsolePage": {
     "title": "Google Search Console",
     "description": "Pantau kinerja situs Anda di Google Search dan dapatkan wawasan untuk meningkatkan visibilitas Anda.",
-    "statusTitle": "File Verifikasi Siap",
-    "statusDescription": "File verifikasi Google Search Console Anda sudah siap. Sekarang Anda dapat menyelesaikan proses verifikasi.",
+    "statusTitle": "Tag Verifikasi Siap",
+    "statusDescription": "Tag verifikasi Google Search Console Anda sudah siap. Sekarang Anda dapat menyelesaikan proses verifikasi.",
     "verificationMethodTitle": "Metode Verifikasi",
-    "verificationMethodDescription": "Metode verifikasi file HTML sekarang telah dikonfigurasi. Google akan mencari file ini untuk mengonfirmasi kepemilikan Anda.",
-    "htmlFileMethodTitle": "Metode File HTML",
-    "htmlFileMethodDescription": "File verifikasi telah ditambahkan ke direktori root situs Anda. Lanjutkan dengan verifikasi di situs web Google Search Console.",
+    "verificationMethodDescription": "Metode verifikasi tag HTML sekarang telah dikonfigurasi. Google akan mencari tag ini di header situs Anda untuk mengonfirmasi kepemilikan Anda.",
+    "htmlFileMethodTitle": "Metode Tag HTML",
+    "htmlFileMethodDescription": "Tag verifikasi telah ditambahkan ke header situs Anda. Lanjutkan dengan verifikasi di situs web Google Search Console.",
     "visitSearchConsole": "Kunjungi Search Console"
   },
   "youtubeOptimizationPage": {
