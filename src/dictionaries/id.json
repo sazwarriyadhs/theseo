@@ -16,7 +16,7 @@
     "googleAnalytics": "Google Analytics",
     "googleAdsense": "Google Adsense",
     "youtubeOptimization": "Optimisasi YouTube",
-    "instagramOptimization": "Optimisasi Instagram",
+    "instagramOptimization": "Generator Instagram AI",
     "settings": "Pengaturan",
     "support": "Dukungan"
   },
@@ -126,8 +126,7 @@
   "comingSoon": {
     "title": "Fitur Segera Hadir",
     "competitorAnalyzer": "Alat ini akan memungkinkan Anda memasukkan domain pesaing dan menerima analisis terperinci tentang upaya SEO dan pemasaran konten mereka, membantu Anda mengidentifikasi peluang dan menyempurnakan strategi Anda sendiri untuk digimediakomunika.cloud.",
-    "googleAdsense": "Bagian ini akan menyediakan alat untuk mengintegrasikan Google Adsense dengan situs web Anda, menganalisis kinerja iklan, dan menawarkan saran berbasis AI untuk mengoptimalkan penempatan dan format iklan untuk pendapatan maksimum.",
-    "instagramOptimization": "Hubungkan akun Instagram Anda untuk mendapatkan saran berbasis AI untuk ide postingan, strategi tagar, dan optimisasi konten untuk meningkatkan keterlibatan dan pertumbuhan pengikut Anda."
+    "googleAdsense": "Bagian ini akan menyediakan alat untuk mengintegrasikan Google Adsense dengan situs web Anda, menganalisis kinerja iklan, dan menawarkan saran berbasis AI untuk mengoptimalkan penempatan dan format iklan untuk pendapatan maksimum."
   },
   "competitorAnalyzerPage": {
     "title": "Penganalisis Kompetitor",
@@ -167,8 +166,25 @@
     "errorTitle": "Gagal Membuat"
   },
   "instagramOptimizationPage": {
-    "title": "Optimisasi Instagram",
-    "description": "Dapatkan wawasan dan saran untuk menumbuhkan kehadiran Instagram Anda.",
-    "visitProfile": "Kunjungi Profil"
+    "title": "Generator Postingan Instagram AI",
+    "description": "Ubah konten Anda menjadi postingan Instagram yang menarik dengan caption, tagar, dan ide gambar yang dibuat oleh AI.",
+    "form": {
+      "contentLabel": "Sumber Konten",
+      "contentPlaceholder": "Tempelkan konten Anda di sini...",
+      "button": "Buat Postingan",
+      "loading": "Membuat..."
+    },
+    "results": {
+      "loadingTitle": "AI sedang membuat postingan Instagram Anda...",
+      "loadingDescription": "Ini mungkin membutuhkan waktu sejenak.",
+      "title": "Postingan Instagram yang Dihasilkan",
+      "caption": "Keterangan",
+      "hashtags": "Tagar",
+      "imagePrompt": "Ide Gambar",
+      "generateImage": "Buat Gambar",
+      "generatingImage": "Membuat..."
+    },
+    "error": "Terjadi kesalahan saat membuat postingan Instagram. Silakan coba lagi.",
+    "errorTitle": "Pembuatan Gagal"
   }
 }

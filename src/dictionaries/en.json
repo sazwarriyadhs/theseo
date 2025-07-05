@@ -16,7 +16,7 @@
     "googleAnalytics": "Google Analytics",
     "googleAdsense": "Google Adsense",
     "youtubeOptimization": "YouTube Optimization",
-    "instagramOptimization": "Instagram Optimization",
+    "instagramOptimization": "AI Instagram Generator",
     "settings": "Settings",
     "support": "Support"
   },
@@ -126,8 +126,7 @@
   "comingSoon": {
     "title": "Feature Coming Soon",
     "competitorAnalyzer": "This tool will allow you to enter competitor domains and receive a detailed analysis of their SEO and content marketing efforts, helping you identify opportunities and refine your own strategy for digimediakomunika.cloud.",
-    "googleAdsense": "This section will provide tools to integrate Google Adsense with your website, analyze ad performance, and offer AI-driven suggestions to optimize ad placements and formats for maximum revenue.",
-    "instagramOptimization": "Connect your Instagram account to get AI-powered suggestions for post ideas, hashtag strategies, and content optimization to boost your engagement and follower growth."
+    "googleAdsense": "This section will provide tools to integrate Google Adsense with your website, analyze ad performance, and offer AI-driven suggestions to optimize ad placements and formats for maximum revenue."
   },
   "competitorAnalyzerPage": {
     "title": "Competitor Analyzer",
@@ -167,8 +166,25 @@
     "errorTitle": "Generation Failed"
   },
   "instagramOptimizationPage": {
-    "title": "Instagram Optimization",
-    "description": "Get insights and suggestions to grow your Instagram presence.",
-    "visitProfile": "Visit Profile"
+    "title": "AI Instagram Post Generator",
+    "description": "Turn your content into engaging Instagram posts with AI-generated captions, hashtags, and image ideas.",
+    "form": {
+      "contentLabel": "Content Source",
+      "contentPlaceholder": "Paste your content here...",
+      "button": "Generate Posts",
+      "loading": "Generating..."
+    },
+    "results": {
+      "loadingTitle": "AI is creating your Instagram posts...",
+      "loadingDescription": "This may take a moment.",
+      "title": "Generated Instagram Posts",
+      "caption": "Caption",
+      "hashtags": "Hashtags",
+      "imagePrompt": "Image Idea",
+      "generateImage": "Generate Image",
+      "generatingImage": "Generating..."
+    },
+    "error": "An error occurred while generating Instagram posts. Please try again.",
+    "errorTitle": "Generation Failed"
   }
 }
