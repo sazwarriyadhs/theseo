@@ -140,7 +140,9 @@
     "actionRequired": "Action Required",
     "instructions": "To complete the integration, please add your Google Analytics Measurement ID to the .env file in the root of your project. You can find your Measurement ID (it starts with 'G-') in your Google Analytics account under Admin > Data Streams.",
     "envExample": "NEXT_PUBLIC_GA_MEASUREMENT_ID=\"G-XXXXXXXXXX\"",
-    "dataNote": "Once the ID is added, data may take up to 48 hours to appear in your Google Analytics dashboard."
+    "dataNote": "Once the ID is added, data may take up to 48 hours to appear in your Google Analytics dashboard.",
+    "setupCompleteTitle": "Integration Complete",
+    "setupCompleteDescription": "Google Analytics has been successfully configured. It may take up to 48 hours for data to start appearing in your Google Analytics dashboard."
   },
   "googleAdsensePage": {
     "title": "Google Adsense",

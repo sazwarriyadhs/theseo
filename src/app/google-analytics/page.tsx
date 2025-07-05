@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { LineChart, AlertTriangle } from "lucide-react";
+import { LineChart, CheckCircle2 } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function GoogleAnalyticsPage() {
@@ -17,18 +17,10 @@ export default function GoogleAnalyticsPage() {
         </CardHeader>
         <CardContent>
           <Alert>
-            <AlertTriangle className="h-4 w-4" />
-            <AlertTitle>Action Required</AlertTitle>
+            <CheckCircle2 className="h-4 w-4" />
+            <AlertTitle>Integration Complete</AlertTitle>
             <AlertDescription>
-              <p className="mb-2">
-                To complete the integration, please add your Google Analytics Measurement ID to the <code>.env</code> file in the root of your project. You can find your Measurement ID (it starts with "G-") in your Google Analytics account under Admin {'>'} Data Streams.
-              </p>
-              <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
-                NEXT_PUBLIC_GA_MEASUREMENT_ID="G-XXXXXXXXXX"
-              </code>
-              <p className="mt-2 text-xs text-muted-foreground">
-                Once the ID is added, data may take up to 48 hours to appear in your Google Analytics dashboard.
-              </p>
+              Google Analytics has been successfully configured. It may take up to 48 hours for data to start appearing in your Google Analytics dashboard.
             </AlertDescription>
           </Alert>
         </CardContent>

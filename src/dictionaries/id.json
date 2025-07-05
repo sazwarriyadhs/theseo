@@ -140,7 +140,9 @@
     "actionRequired": "Tindakan Diperlukan",
     "instructions": "Untuk menyelesaikan integrasi, harap tambahkan Measurement ID Google Analytics Anda ke file .env di root proyek Anda. Anda dapat menemukan Measurement ID Anda (dimulai dengan 'G-') di akun Google Analytics Anda di bawah Admin > Aliran Data.",
     "envExample": "NEXT_PUBLIC_GA_MEASUREMENT_ID=\"G-XXXXXXXXXX\"",
-    "dataNote": "Setelah ID ditambahkan, data mungkin memerlukan waktu hingga 48 jam untuk muncul di dasbor Google Analytics Anda."
+    "dataNote": "Setelah ID ditambahkan, data mungkin memerlukan waktu hingga 48 jam untuk muncul di dasbor Google Analytics Anda.",
+    "setupCompleteTitle": "Integrasi Selesai",
+    "setupCompleteDescription": "Google Analytics telah berhasil dikonfigurasi. Mungkin perlu waktu hingga 48 jam hingga data mulai muncul di dasbor Google Analytics Anda."
   },
   "googleAdsensePage": {
     "title": "Google Adsense",

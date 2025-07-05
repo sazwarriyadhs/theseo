@@ -48,7 +48,7 @@ export default async function RootLayout({
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
-        {GA_MEASUREMENT_ID && GA_MEASUREMENT_ID !== "G-REPLACE_WITH_YOUR_ID" && (
+        {GA_MEASUREMENT_ID && (
           <>
             <Script
               async

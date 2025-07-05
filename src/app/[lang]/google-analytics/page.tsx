@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { LineChart, AlertTriangle } from "lucide-react";
+import { LineChart, CheckCircle2 } from "lucide-react";
 import { getDictionary } from "@/dictionaries/get-dictionary";
 import { Locale } from "@/i18n-config";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -22,14 +22,10 @@ export default async function GoogleAnalyticsPage({ params: { lang } }: { params
         </CardHeader>
         <CardContent>
           <Alert>
-            <AlertTriangle className="h-4 w-4" />
-            <AlertTitle>{t.actionRequired}</AlertTitle>
+            <CheckCircle2 className="h-4 w-4" />
+            <AlertTitle>{t.setupCompleteTitle}</AlertTitle>
             <AlertDescription>
-              <p className="mb-2">{t.instructions}</p>
-              <code className="relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold">
-                {t.envExample}
-              </code>
-              <p className="mt-2 text-xs text-muted-foreground">{t.dataNote}</p>
+              {t.setupCompleteDescription}
             </AlertDescription>
           </Alert>
         </CardContent>
