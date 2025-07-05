@@ -2,43 +2,133 @@
 
 import { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Youtube, PlayCircle } from 'lucide-react';
+import { Youtube, PlayCircle, AlertTriangle } from 'lucide-react';
 import NextImage from 'next/image';
 import { Button } from './ui/button';
 import Link from 'next/link';
+import { Skeleton } from './ui/skeleton';
 
-type MockVideo = {
-  id: number;
-  title: string;
-  views: string;
-  thumbnailHint: string;
+type YouTubeVideo = {
+  id: {
+    videoId: string;
+  };
+  snippet: {
+    title: string;
+    description: string;
+    thumbnails: {
+      high: {
+        url: string;
+        width: number;
+        height: number;
+      };
+    };
+    publishedAt: string;
+  };
 };
 
 export default function YouTubeFeedPreview({ dictionary }: { dictionary: any }) {
-  const [mockVideos, setMockVideos] = useState<MockVideo[]>([]);
+  const [videos, setVideos] = useState<YouTubeVideo[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
   const t = dictionary;
 
   useEffect(() => {
-    const titles = [
-      "Unlocking SEO Secrets for 2024",
-      "How We Generated 10k Leads with Social Media",
-      "Content Marketing Masterclass",
-      "AI in Digital Marketing: The Future is Now",
-      "Top 5 Google Ads Mistakes to Avoid",
-      "Building a Brand from Scratch",
-    ];
-    const hints = ["business meeting", "laptop code", "presentation audience", "ai robot", "analytics dashboard", "brand logo"];
+    const fetchVideos = async () => {
+      setLoading(true);
+      setError(null);
+      const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
+      const channelId = 'UCyxPy9dYgUO7UdC2zEnJpSA'; // @NgobrolDigitalYuk
 
-    const generatedVideos = Array.from({ length: 6 }, (_, i) => ({
-      id: i,
-      title: titles[i % titles.length] || "Sample Video Title",
-      views: `${(Math.random() * 100).toFixed(1)}k views`,
-      thumbnailHint: hints[i % hints.length] || "digital marketing"
-    }));
-    setMockVideos(generatedVideos);
+      if (!apiKey) {
+        setError("YouTube API key is not configured.");
+        setLoading(false);
+        return;
+      }
+      
+      try {
+        const res = await fetch(
+          `https://www.googleapis.com/youtube/v3/search?key=${apiKey}&channelId=${channelId}&part=snippet&order=date&maxResults=6&type=video`
+        );
+        if (!res.ok) {
+          const errorData = await res.json();
+          throw new Error(errorData.error?.message || 'Failed to fetch videos from YouTube API');
+        }
+        const data = await res.json();
+        setVideos(data.items || []);
+      } catch (err: any) {
+        console.error("Failed to fetch YouTube videos:", err);
+        setError(err.message || "An unknown error occurred while fetching videos.");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchVideos();
   }, []);
 
   if (!t) return null;
+
+  const renderContent = () => {
+    if (loading) {
+      return (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {Array.from({ length: 6 }).map((_, i) => (
+            <div key={i}>
+              <Skeleton className="aspect-video w-full rounded-lg" />
+              <Skeleton className="h-4 w-3/4 mt-2" />
+              <Skeleton className="h-3 w-1/2 mt-1" />
+            </div>
+          ))}
+        </div>
+      );
+    }
+    
+    if (error) {
+       return (
+        <div className="col-span-full flex flex-col items-center justify-center text-center text-destructive bg-destructive/10 p-8 rounded-lg">
+          <AlertTriangle className="h-10 w-10 mb-4" />
+          <h4 className="text-lg font-semibold">Could not load videos</h4>
+          <p className="text-sm max-w-md">{error}</p>
+        </div>
+      );
+    }
+
+    if (videos.length === 0) {
+      return (
+        <div className="col-span-3 text-center text-muted-foreground p-8">
+          No videos found for this channel.
+        </div>
+      );
+    }
+    
+    return (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {videos.map((video) => {
+          if (!video.id.videoId || !video.snippet) return null;
+          return (
+            <Link key={video.id.videoId} href={`https://www.youtube.com/watch?v=${video.id.videoId}`} target="_blank" rel="noopener noreferrer" className="group relative block">
+               <div className="aspect-video w-full overflow-hidden rounded-lg">
+                 <NextImage
+                    src={video.snippet.thumbnails.high.url}
+                    alt={video.snippet.title}
+                    width={video.snippet.thumbnails.high.width}
+                    height={video.snippet.thumbnails.high.height}
+                    className="object-cover w-full h-full transition-transform group-hover:scale-105"
+                 />
+               </div>
+               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-lg cursor-pointer">
+                  <PlayCircle className="h-12 w-12 text-white" />
+               </div>
+               <div className="mt-2">
+                  <h4 className="font-semibold text-sm truncate" title={video.snippet.title}>{video.snippet.title}</h4>
+                   <p className="text-xs text-muted-foreground">{new Date(video.snippet.publishedAt).toLocaleDateString()}</p>
+               </div>
+            </Link>
+          );
+        })}
+      </div>
+    );
+  };
 
   return (
     <Card>
@@ -57,33 +147,7 @@ export default function YouTubeFeedPreview({ dictionary }: { dictionary: any }) 
         <CardDescription>{t.description}</CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {mockVideos.length > 0 ? (
-            mockVideos.map((video) => (
-            <div key={video.id} className="group relative">
-               <div className="aspect-video w-full overflow-hidden rounded-lg">
-                 <NextImage
-                    src={`https://placehold.co/600x400.png`}
-                    alt={video.title}
-                    width={600}
-                    height={400}
-                    className="object-cover w-full h-full transition-transform group-hover:scale-105"
-                    data-ai-hint={video.thumbnailHint}
-                 />
-               </div>
-               <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-lg cursor-pointer">
-                  <PlayCircle className="h-12 w-12 text-white" />
-               </div>
-               <div className="mt-2">
-                  <h4 className="font-semibold text-sm truncate">{video.title}</h4>
-                  <p className="text-xs text-muted-foreground">{video.views}</p>
-               </div>
-            </div>
-          ))
-          ) : (
-             <div className="col-span-3 text-center text-muted-foreground p-4">Loading feed preview...</div>
-          )}
-        </div>
+        {renderContent()}
       </CardContent>
     </Card>
   );
