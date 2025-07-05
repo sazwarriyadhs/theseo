@@ -24,6 +24,7 @@ import {
   Settings,
   LifeBuoy,
   Instagram,
+  CheckSquare,
 } from 'lucide-react';
 import { Separator } from '../ui/separator';
 import { Locale } from '@/i18n-config';
@@ -47,6 +48,7 @@ export function AppSidebar({ lang, dictionary }: { lang: Locale, dictionary: any
     { href: '/competitor-analyzer', label: t.competitorAnalyzer, icon: Users },
     { href: '/google-analytics', label: t.googleAnalytics, icon: LineChart },
     { href: '/google-adsense', label: t.googleAdsense, icon: DollarSign },
+    { href: '/google-search-console', label: t.googleSearchConsole, icon: CheckSquare },
     { href: '/youtube-optimization', label: t.youtubeOptimization, icon: Youtube },
     { href: '/instagram-optimization', label: t.instagramOptimization, icon: Instagram },
   ];

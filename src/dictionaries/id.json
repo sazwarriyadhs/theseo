@@ -15,6 +15,7 @@
     "competitorAnalyzer": "Penganalisis Kompetitor",
     "googleAnalytics": "Google Analytics",
     "googleAdsense": "Google Adsense",
+    "googleSearchConsole": "Google Search Console",
     "youtubeOptimization": "Optimisasi YouTube",
     "instagramOptimization": "Optimisasi Instagram",
     "settings": "Pengaturan",
@@ -142,6 +143,17 @@
     "description": "Saran integrasi dan optimisasi untuk Google Adsense.",
     "setupCompleteTitle": "Integrasi Selesai",
     "setupCompleteDescription": "Google AdSense telah berhasil dikonfigurasi dan Iklan Otomatis diaktifkan. Iklan akan mulai muncul di situs Anda setelah perayap Google meninjau halaman Anda. Ini bisa memakan waktu beberapa jam hingga beberapa hari."
+  },
+  "googleSearchConsolePage": {
+    "title": "Google Search Console",
+    "description": "Pantau kinerja situs Anda di Google Search dan dapatkan wawasan untuk meningkatkan visibilitas Anda.",
+    "statusTitle": "Siap untuk Verifikasi",
+    "statusDescription": "Situs Anda siap untuk ditambahkan dan diverifikasi di Google Search Console.",
+    "verificationMethodTitle": "Metode Verifikasi",
+    "verificationMethodDescription": "Cara yang disarankan untuk memverifikasi kepemilikan situs Anda adalah melalui integrasi Google Analytics Anda.",
+    "analyticsMethodTitle": "Metode Google Analytics",
+    "analyticsMethodDescription": "Karena Anda telah mengintegrasikan Google Analytics, Anda dapat menggunakannya untuk memverifikasi situs Anda secara instan. Buka Google Search Console, tambahkan domain Anda, dan pilih metode verifikasi Google Analytics.",
+    "visitSearchConsole": "Kunjungi Search Console"
   },
   "youtubeOptimizationPage": {
     "title": "Generator Video YouTube AI",

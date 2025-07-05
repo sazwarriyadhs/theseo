@@ -15,6 +15,7 @@
     "competitorAnalyzer": "Competitor Analyzer",
     "googleAnalytics": "Google Analytics",
     "googleAdsense": "Google Adsense",
+    "googleSearchConsole": "Google Search Console",
     "youtubeOptimization": "YouTube Optimization",
     "instagramOptimization": "Instagram Optimization",
     "settings": "Settings",
@@ -142,6 +143,17 @@
     "description": "Integration and optimization suggestions for Google Adsense.",
     "setupCompleteTitle": "Integration Complete",
     "setupCompleteDescription": "Google AdSense has been successfully configured and Auto Ads are enabled. Ads will begin to appear on your site as Google's crawlers review your pages. This may take a few hours to a few days."
+  },
+  "googleSearchConsolePage": {
+    "title": "Google Search Console",
+    "description": "Monitor your site's performance in Google Search and get insights to improve your visibility.",
+    "statusTitle": "Ready for Verification",
+    "statusDescription": "Your site is ready to be added and verified in Google Search Console.",
+    "verificationMethodTitle": "Verification Method",
+    "verificationMethodDescription": "The recommended way to verify your site ownership is through your Google Analytics integration.",
+    "analyticsMethodTitle": "Google Analytics Method",
+    "analyticsMethodDescription": "Since you have already integrated Google Analytics, you can use it to instantly verify your site. Go to Google Search Console, add your domain, and choose the Google Analytics verification method.",
+    "visitSearchConsole": "Visit Search Console"
   },
   "youtubeOptimizationPage": {
     "title": "AI YouTube Video Generator",
