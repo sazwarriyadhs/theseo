@@ -127,7 +127,6 @@
     "title": "Fitur Segera Hadir",
     "competitorAnalyzer": "Alat ini akan memungkinkan Anda memasukkan domain pesaing dan menerima analisis terperinci tentang upaya SEO dan pemasaran konten mereka, membantu Anda mengidentifikasi peluang dan menyempurnakan strategi Anda sendiri untuk digimediakomunika.cloud.",
     "googleAdsense": "Bagian ini akan menyediakan alat untuk mengintegrasikan Google Adsense dengan situs web Anda, menganalisis kinerja iklan, dan menawarkan saran berbasis AI untuk mengoptimalkan penempatan dan format iklan untuk pendapatan maksimum.",
-    "youtubeOptimization": "Hubungkan saluran YouTube digimediakomunika.cloud Anda untuk mendapatkan saran berbasis AI untuk judul video, deskripsi, tag, dan ide konten untuk meningkatkan jumlah penayangan dan pertumbuhan pelanggan Anda.",
     "instagramOptimization": "Hubungkan akun Instagram Anda untuk mendapatkan saran berbasis AI untuk ide postingan, strategi tagar, dan optimisasi konten untuk meningkatkan keterlibatan dan pertumbuhan pengikut Anda."
   },
   "competitorAnalyzerPage": {
@@ -137,10 +136,6 @@
   "googleAnalyticsPage": {
     "title": "Google Analytics",
     "description": "Integrasi untuk Google Analytics.",
-    "actionRequired": "Tindakan Diperlukan",
-    "instructions": "Untuk menyelesaikan integrasi, harap tambahkan Measurement ID Google Analytics Anda ke file .env di root proyek Anda. Anda dapat menemukan Measurement ID Anda (dimulai dengan 'G-') di akun Google Analytics Anda di bawah Admin > Aliran Data.",
-    "envExample": "NEXT_PUBLIC_GA_MEASUREMENT_ID=\"G-XXXXXXXXXX\"",
-    "dataNote": "Setelah ID ditambahkan, data mungkin memerlukan waktu hingga 48 jam untuk muncul di dasbor Google Analytics Anda.",
     "setupCompleteTitle": "Integrasi Selesai",
     "setupCompleteDescription": "Google Analytics telah berhasil dikonfigurasi. Mungkin perlu waktu hingga 48 jam hingga data mulai muncul di dasbor Google Analytics Anda."
   },
@@ -149,9 +144,27 @@
     "description": "Saran integrasi dan optimisasi untuk Google Adsense."
   },
   "youtubeOptimizationPage": {
-    "title": "Optimisasi Saluran YouTube",
-    "description": "Saran integrasi dan optimisasi untuk saluran YouTube Anda.",
-    "visitChannel": "Kunjungi Channel"
+    "title": "Generator Video YouTube AI",
+    "description": "Ubah konten situs web atau artikel Anda menjadi skrip video yang menarik dengan narasi dan visual yang dibuat oleh AI.",
+    "form": {
+      "contentLabel": "Artikel atau Konten",
+      "contentPlaceholder": "Tempelkan postingan blog, artikel, atau konten lainnya di sini...",
+      "button": "Hasilkan Aset Video",
+      "loading": "Menghasilkan..."
+    },
+    "results": {
+      "loadingTitle": "AI sedang membuat aset video Anda...",
+      "loadingDescription": "Proses ini meliputi pembuatan skrip dan audio, jadi mungkin perlu waktu sebentar.",
+      "title": "Paket Aset Video",
+      "narrationTitle": "Audio Narasi",
+      "downloadAudio": "Unduh WAV",
+      "scenesTitle": "Papan Cerita Video",
+      "scene": "Adegan",
+      "generateImage": "Hasilkan Gambar",
+      "generatingImage": "Menghasilkan..."
+    },
+    "error": "Terjadi kesalahan saat membuat aset video. Silakan coba lagi.",
+    "errorTitle": "Gagal Membuat"
   },
   "instagramOptimizationPage": {
     "title": "Optimisasi Instagram",

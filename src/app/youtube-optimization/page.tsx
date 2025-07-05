@@ -1,37 +1,28 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Youtube, ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import YouTubeGeneratorClientPage from '@/components/youtube-generator-client';
 
 export default function YouTubeOptimizationPage() {
-  return (
-    <div className="max-w-4xl mx-auto">
-      <Card>
-        <CardHeader>
-          <CardTitle className="flex items-center justify-between gap-2 text-2xl">
-            <span className="flex items-center gap-2">
-              <Youtube className="h-6 w-6 text-primary" />
-              YouTube Channel Optimization
-            </span>
-            <Button asChild variant="outline" size="sm">
-              <a href="https://www.youtube.com/@NgobrolDigitalYuk" target="_blank" rel="noopener noreferrer">
-                <ExternalLink className="mr-2 h-4 w-4" />
-                Visit Channel
-              </a>
-            </Button>
-          </CardTitle>
-          <CardDescription className="text-base">
-            Integration and optimization suggestions for your YouTube channel.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <div className="p-8 text-center bg-secondary rounded-lg">
-            <h3 className="text-xl font-semibold text-secondary-foreground mb-2">Feature Coming Soon</h3>
-            <p className="text-muted-foreground">
-              Connect your digimediakomunika.cloud YouTube channel to get AI-powered suggestions for video titles, descriptions, tags, and content ideas to boost your views and subscriber growth.
-            </p>
-          </div>
-        </CardContent>
-      </Card>
-    </div>
-  );
+    const dictionary = {
+        title: "AI YouTube Video Generator",
+        description: "Turn your website content or articles into engaging video scripts with AI-generated narration and visuals.",
+        form: {
+            contentLabel: "Article or Content",
+            contentPlaceholder: "Paste your blog post, article, or any other content here...",
+            button: "Generate Video Assets",
+            loading: "Generating..."
+        },
+        results: {
+            loadingTitle: "AI is creating your video assets...",
+            loadingDescription: "This process involves generating a script and audio, so it may take a minute.",
+            title: "Video Asset Package",
+            narrationTitle: "Narration Audio",
+            downloadAudio: "Download WAV",
+            scenesTitle: "Video Storyboard",
+            scene: "Scene",
+            generateImage: "Generate Image",
+            generatingImage: "Generating..."
+        },
+        error: "An error occurred while generating video assets. Please try again.",
+        errorTitle: "Generation Failed"
+    };
+    return <YouTubeGeneratorClientPage dictionary={dictionary} />;
 }

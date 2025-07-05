@@ -127,7 +127,6 @@
     "title": "Feature Coming Soon",
     "competitorAnalyzer": "This tool will allow you to enter competitor domains and receive a detailed analysis of their SEO and content marketing efforts, helping you identify opportunities and refine your own strategy for digimediakomunika.cloud.",
     "googleAdsense": "This section will provide tools to integrate Google Adsense with your website, analyze ad performance, and offer AI-driven suggestions to optimize ad placements and formats for maximum revenue.",
-    "youtubeOptimization": "Connect your digimediakomunika.cloud YouTube channel to get AI-powered suggestions for video titles, descriptions, tags, and content ideas to boost your views and subscriber growth.",
     "instagramOptimization": "Connect your Instagram account to get AI-powered suggestions for post ideas, hashtag strategies, and content optimization to boost your engagement and follower growth."
   },
   "competitorAnalyzerPage": {
@@ -137,10 +136,6 @@
   "googleAnalyticsPage": {
     "title": "Google Analytics",
     "description": "Integration for Google Analytics.",
-    "actionRequired": "Action Required",
-    "instructions": "To complete the integration, please add your Google Analytics Measurement ID to the .env file in the root of your project. You can find your Measurement ID (it starts with 'G-') in your Google Analytics account under Admin > Data Streams.",
-    "envExample": "NEXT_PUBLIC_GA_MEASUREMENT_ID=\"G-XXXXXXXXXX\"",
-    "dataNote": "Once the ID is added, data may take up to 48 hours to appear in your Google Analytics dashboard.",
     "setupCompleteTitle": "Integration Complete",
     "setupCompleteDescription": "Google Analytics has been successfully configured. It may take up to 48 hours for data to start appearing in your Google Analytics dashboard."
   },
@@ -149,9 +144,27 @@
     "description": "Integration and optimization suggestions for Google Adsense."
   },
   "youtubeOptimizationPage": {
-    "title": "YouTube Channel Optimization",
-    "description": "Integration and optimization suggestions for your YouTube channel.",
-    "visitChannel": "Visit Channel"
+    "title": "AI YouTube Video Generator",
+    "description": "Turn your website content or articles into engaging video scripts with AI-generated narration and visuals.",
+    "form": {
+      "contentLabel": "Article or Content",
+      "contentPlaceholder": "Paste your blog post, article, or any other content here...",
+      "button": "Generate Video Assets",
+      "loading": "Generating..."
+    },
+    "results": {
+      "loadingTitle": "AI is creating your video assets...",
+      "loadingDescription": "This process involves generating a script and audio, so it may take a minute.",
+      "title": "Video Asset Package",
+      "narrationTitle": "Narration Audio",
+      "downloadAudio": "Download WAV",
+      "scenesTitle": "Video Storyboard",
+      "scene": "Scene",
+      "generateImage": "Generate Image",
+      "generatingImage": "Generating..."
+    },
+    "error": "An error occurred while generating video assets. Please try again.",
+    "errorTitle": "Generation Failed"
   },
   "instagramOptimizationPage": {
     "title": "Instagram Optimization",
