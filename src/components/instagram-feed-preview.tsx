@@ -4,6 +4,8 @@ import { useState, useEffect } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Instagram, Heart, MessageCircle } from 'lucide-react';
 import NextImage from 'next/image';
+import Link from 'next/link';
+import { buttonVariants } from './ui/button';
 
 type MockPost = {
   id: number;
@@ -32,9 +34,19 @@ export default function InstagramFeedPreview({ dictionary }: { dictionary: any }
   return (
     <Card>
       <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Instagram className="h-6 w-6 text-primary" />
-          {t.title}
+        <CardTitle className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <Instagram className="h-6 w-6 text-primary" />
+            {t.title}
+          </div>
+          <Link
+            href="https://www.instagram.com/ngobroldigital/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={buttonVariants({ variant: "outline" })}
+          >
+            {t.visitProfile}
+          </Link>
         </CardTitle>
         <CardDescription>{t.description}</CardDescription>
       </CardHeader>

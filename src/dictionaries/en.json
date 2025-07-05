@@ -206,7 +206,8 @@
     "errorTitle": "Generation Failed",
     "feedPreview": {
       "title": "Instagram Feed Preview",
-      "description": "See how your generated posts might look on your profile."
+      "description": "See how your generated posts might look on your profile.",
+      "visitProfile": "Visit Profile"
     }
   }
 }

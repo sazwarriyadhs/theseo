@@ -206,7 +206,8 @@
     "errorTitle": "Pembuatan Gagal",
     "feedPreview": {
       "title": "Pratinjau Feed Instagram",
-      "description": "Lihat bagaimana tampilan postingan Anda di profil Anda."
+      "description": "Lihat bagaimana tampilan postingan Anda di profil Anda.",
+      "visitProfile": "Kunjungi Profil"
     }
   }
 }
