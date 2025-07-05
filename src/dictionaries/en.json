@@ -126,7 +126,6 @@
   "comingSoon": {
     "title": "Feature Coming Soon",
     "competitorAnalyzer": "This tool will allow you to enter competitor domains and receive a detailed analysis of their SEO and content marketing efforts, helping you identify opportunities and refine your own strategy for digimediakomunika.cloud.",
-    "googleAnalytics": "Seamlessly connect your Google Analytics account to view key website metrics directly within the DigiMedia Optimizer dashboard. We'll provide simplified reports and actionable insights based on your traffic data.",
     "googleAdsense": "This section will provide tools to integrate Google Adsense with your website, analyze ad performance, and offer AI-driven suggestions to optimize ad placements and formats for maximum revenue.",
     "youtubeOptimization": "Connect your digimediakomunika.cloud YouTube channel to get AI-powered suggestions for video titles, descriptions, tags, and content ideas to boost your views and subscriber growth.",
     "instagramOptimization": "Connect your Instagram account to get AI-powered suggestions for post ideas, hashtag strategies, and content optimization to boost your engagement and follower growth."
@@ -137,7 +136,11 @@
   },
   "googleAnalyticsPage": {
     "title": "Google Analytics",
-    "description": "Integration for Google Analytics."
+    "description": "Integration for Google Analytics.",
+    "actionRequired": "Action Required",
+    "instructions": "To complete the integration, please add your Google Analytics Measurement ID to the .env file in the root of your project. You can find your Measurement ID (it starts with 'G-') in your Google Analytics account under Admin > Data Streams.",
+    "envExample": "NEXT_PUBLIC_GA_MEASUREMENT_ID=\"G-XXXXXXXXXX\"",
+    "dataNote": "Once the ID is added, data may take up to 48 hours to appear in your Google Analytics dashboard."
   },
   "googleAdsensePage": {
     "title": "Google Adsense",

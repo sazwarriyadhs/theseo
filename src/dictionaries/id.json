@@ -126,7 +126,6 @@
   "comingSoon": {
     "title": "Fitur Segera Hadir",
     "competitorAnalyzer": "Alat ini akan memungkinkan Anda memasukkan domain pesaing dan menerima analisis terperinci tentang upaya SEO dan pemasaran konten mereka, membantu Anda mengidentifikasi peluang dan menyempurnakan strategi Anda sendiri untuk digimediakomunika.cloud.",
-    "googleAnalytics": "Hubungkan akun Google Analytics Anda dengan mulus untuk melihat metrik utama situs web langsung di dasbor DigiMedia Optimizer. Kami akan menyediakan laporan yang disederhanakan dan wawasan yang dapat ditindaklanjuti berdasarkan data lalu lintas Anda.",
     "googleAdsense": "Bagian ini akan menyediakan alat untuk mengintegrasikan Google Adsense dengan situs web Anda, menganalisis kinerja iklan, dan menawarkan saran berbasis AI untuk mengoptimalkan penempatan dan format iklan untuk pendapatan maksimum.",
     "youtubeOptimization": "Hubungkan saluran YouTube digimediakomunika.cloud Anda untuk mendapatkan saran berbasis AI untuk judul video, deskripsi, tag, dan ide konten untuk meningkatkan jumlah penayangan dan pertumbuhan pelanggan Anda.",
     "instagramOptimization": "Hubungkan akun Instagram Anda untuk mendapatkan saran berbasis AI untuk ide postingan, strategi tagar, dan optimisasi konten untuk meningkatkan keterlibatan dan pertumbuhan pengikut Anda."
@@ -137,7 +136,11 @@
   },
   "googleAnalyticsPage": {
     "title": "Google Analytics",
-    "description": "Integrasi untuk Google Analytics."
+    "description": "Integrasi untuk Google Analytics.",
+    "actionRequired": "Tindakan Diperlukan",
+    "instructions": "Untuk menyelesaikan integrasi, harap tambahkan Measurement ID Google Analytics Anda ke file .env di root proyek Anda. Anda dapat menemukan Measurement ID Anda (dimulai dengan 'G-') di akun Google Analytics Anda di bawah Admin > Aliran Data.",
+    "envExample": "NEXT_PUBLIC_GA_MEASUREMENT_ID=\"G-XXXXXXXXXX\"",
+    "dataNote": "Setelah ID ditambahkan, data mungkin memerlukan waktu hingga 48 jam untuk muncul di dasbor Google Analytics Anda."
   },
   "googleAdsensePage": {
     "title": "Google Adsense",
