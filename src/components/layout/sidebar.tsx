@@ -48,6 +48,7 @@ export function AppSidebar({ lang, dictionary }: { lang: Locale, dictionary: any
     { href: '/google-analytics', label: t.googleAnalytics, icon: LineChart },
     { href: '/google-adsense', label: t.googleAdsense, icon: DollarSign },
     { href: '/youtube-optimization', label: t.youtubeOptimization, icon: Youtube },
+    { href: '/instagram-optimization', label: t.instagramOptimization, icon: Instagram },
   ];
 
   const renderNavItems = (items: typeof mainNavItems) =>
@@ -83,14 +84,6 @@ export function AppSidebar({ lang, dictionary }: { lang: Locale, dictionary: any
       </SidebarContent>
       <SidebarFooter>
         <SidebarMenu>
-          <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip={t.instagram}>
-              <a href="https://www.instagram.com/digimediakomunikapt?igsh=MXRmMjdtYWJ5ZTM1MQ==">
-                <Instagram className="h-4 w-4" />
-                <span>{t.instagram}</span>
-              </a>
-            </SidebarMenuButton>
-          </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip={t.settings}>
               <Link href={`/${lang}#settings`}>

@@ -16,7 +16,7 @@
     "googleAnalytics": "Google Analytics",
     "googleAdsense": "Google Adsense",
     "youtubeOptimization": "Optimisasi YouTube",
-    "instagram": "Instagram",
+    "instagramOptimization": "Optimisasi Instagram",
     "settings": "Pengaturan",
     "support": "Dukungan"
   },
@@ -128,7 +128,8 @@
     "competitorAnalyzer": "Alat ini akan memungkinkan Anda memasukkan domain pesaing dan menerima analisis terperinci tentang upaya SEO dan pemasaran konten mereka, membantu Anda mengidentifikasi peluang dan menyempurnakan strategi Anda sendiri untuk digimediakomunika.cloud.",
     "googleAnalytics": "Hubungkan akun Google Analytics Anda dengan mulus untuk melihat metrik utama situs web langsung di dasbor DigiMedia Optimizer. Kami akan menyediakan laporan yang disederhanakan dan wawasan yang dapat ditindaklanjuti berdasarkan data lalu lintas Anda.",
     "googleAdsense": "Bagian ini akan menyediakan alat untuk mengintegrasikan Google Adsense dengan situs web Anda, menganalisis kinerja iklan, dan menawarkan saran berbasis AI untuk mengoptimalkan penempatan dan format iklan untuk pendapatan maksimum.",
-    "youtubeOptimization": "Hubungkan saluran YouTube digimediakomunika.cloud Anda untuk mendapatkan saran berbasis AI untuk judul video, deskripsi, tag, dan ide konten untuk meningkatkan jumlah penayangan dan pertumbuhan pelanggan Anda."
+    "youtubeOptimization": "Hubungkan saluran YouTube digimediakomunika.cloud Anda untuk mendapatkan saran berbasis AI untuk judul video, deskripsi, tag, dan ide konten untuk meningkatkan jumlah penayangan dan pertumbuhan pelanggan Anda.",
+    "instagramOptimization": "Hubungkan akun Instagram Anda untuk mendapatkan saran berbasis AI untuk ide postingan, strategi tagar, dan optimisasi konten untuk meningkatkan keterlibatan dan pertumbuhan pengikut Anda."
   },
   "competitorAnalyzerPage": {
     "title": "Penganalisis Kompetitor",
@@ -146,5 +147,10 @@
     "title": "Optimisasi Saluran YouTube",
     "description": "Saran integrasi dan optimisasi untuk saluran YouTube Anda.",
     "visitChannel": "Kunjungi Channel"
+  },
+  "instagramOptimizationPage": {
+    "title": "Optimisasi Instagram",
+    "description": "Dapatkan wawasan dan saran untuk menumbuhkan kehadiran Instagram Anda.",
+    "visitProfile": "Kunjungi Profil"
   }
 }
