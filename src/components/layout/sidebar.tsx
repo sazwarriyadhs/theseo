@@ -23,6 +23,7 @@ import {
   Youtube,
   Settings,
   LifeBuoy,
+  Instagram,
 } from 'lucide-react';
 import { Separator } from '../ui/separator';
 import { Locale } from '@/i18n-config';
@@ -66,7 +67,7 @@ export function AppSidebar({ lang, dictionary }: { lang: Locale, dictionary: any
     });
 
   return (
-    <Sidebar variant="sidebar" className="border-sidebar-border/50" dictionary={t}>
+    <Sidebar variant="sidebar" className="border-sidebar-border/50" dictionary={dictionary}>
       <SidebarHeader>
         <Link href={`/${lang}`} className="flex items-center gap-2.5">
           <Icons.logo className="h-7 w-7 text-primary" />
@@ -82,6 +83,14 @@ export function AppSidebar({ lang, dictionary }: { lang: Locale, dictionary: any
       </SidebarContent>
       <SidebarFooter>
         <SidebarMenu>
+          <SidebarMenuItem>
+            <SidebarMenuButton asChild tooltip={t.instagram}>
+              <a href="https://www.instagram.com/digimediakomunikapt?igsh=MXRmMjdtYWJ5ZTM1MQ==">
+                <Instagram className="h-4 w-4" />
+                <span>{t.instagram}</span>
+              </a>
+            </SidebarMenuButton>
+          </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip={t.settings}>
               <Link href={`/${lang}#settings`}>
