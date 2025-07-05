@@ -24,31 +24,34 @@ import {
   Settings,
   LifeBuoy,
 } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import { Separator } from '../ui/separator';
 import { Locale } from '@/i18n-config';
 
 export function AppSidebar({ lang, dictionary }: { lang: Locale, dictionary: any }) {
   const pathname = usePathname();
+  const t = dictionary?.sidebar;
+
+  if (!t) {
+    return null; // Don't render sidebar if dictionary is not available
+  }
 
   const mainNavItems = [
-    { href: '/', label: dictionary.dashboard, icon: LayoutDashboard },
-    { href: '/keyword-analyzer', label: dictionary.aiKeywordTool, icon: Search },
-    { href: '/content-optimizer', label: dictionary.aiContentOptimizer, icon: FileText },
-    { href: '/social-media-generator', label: dictionary.aiPostGenerator, icon: Megaphone },
+    { href: '/', label: t.dashboard, icon: LayoutDashboard },
+    { href: '/keyword-analyzer', label: t.aiKeywordTool, icon: Search },
+    { href: '/content-optimizer', label: t.aiContentOptimizer, icon: FileText },
+    { href: '/social-media-generator', label: t.aiPostGenerator, icon: Megaphone },
   ];
 
   const secondaryNavItems = [
-    { href: '/competitor-analyzer', label: dictionary.competitorAnalyzer, icon: Users },
-    { href: '/google-analytics', label: dictionary.googleAnalytics, icon: LineChart },
-    { href: '/google-adsense', label: dictionary.googleAdsense, icon: DollarSign },
-    { href: '/youtube-optimization', label: dictionary.youtubeOptimization, icon: Youtube },
+    { href: '/competitor-analyzer', label: t.competitorAnalyzer, icon: Users },
+    { href: '/google-analytics', label: t.googleAnalytics, icon: LineChart },
+    { href: '/google-adsense', label: t.googleAdsense, icon: DollarSign },
+    { href: '/youtube-optimization', label: t.youtubeOptimization, icon: Youtube },
   ];
 
   const renderNavItems = (items: typeof mainNavItems) =>
     items.map((item) => {
       const href = `/${lang}${item.href === '/' ? '' : item.href}`;
-      // A more robust check for active state
       const isActive = item.href === '/' ? pathname === `/${lang}` : pathname.startsWith(href);
       return (
         <SidebarMenuItem key={item.href}>
@@ -63,12 +66,12 @@ export function AppSidebar({ lang, dictionary }: { lang: Locale, dictionary: any
     });
 
   return (
-    <Sidebar variant="sidebar" className="border-sidebar-border/50">
+    <Sidebar variant="sidebar" className="border-sidebar-border/50" dictionary={t}>
       <SidebarHeader>
         <Link href={`/${lang}`} className="flex items-center gap-2.5">
           <Icons.logo className="h-7 w-7 text-primary" />
           <span className="truncate text-lg font-semibold tracking-tight text-sidebar-foreground">
-            {dictionary.title}
+            {t.title}
           </span>
         </Link>
       </SidebarHeader>
@@ -80,18 +83,18 @@ export function AppSidebar({ lang, dictionary }: { lang: Locale, dictionary: any
       <SidebarFooter>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip={dictionary.settings}>
+            <SidebarMenuButton asChild tooltip={t.settings}>
               <Link href={`/${lang}#settings`}>
                 <Settings className="h-4 w-4" />
-                <span>{dictionary.settings}</span>
+                <span>{t.settings}</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip={dictionary.support}>
+            <SidebarMenuButton asChild tooltip={t.support}>
               <Link href={`/${lang}#support`}>
                 <LifeBuoy className="h-4 w-4" />
-                <span>{dictionary.support}</span>
+                <span>{t.support}</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>

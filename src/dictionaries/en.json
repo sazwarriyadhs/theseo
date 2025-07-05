@@ -6,6 +6,8 @@
   },
   "sidebar": {
     "title": "DigiMedia Optimizer",
+    "menuTitle": "Menu",
+    "menuDescription": "Main application navigation",
     "dashboard": "Dashboard",
     "aiKeywordTool": "AI Keyword Tool",
     "aiContentOptimizer": "AI Content Optimizer",
@@ -18,6 +20,7 @@
     "support": "Support"
   },
   "header": {
+    "toggleSidebar": "Toggle Sidebar",
     "notifications": "Notifications",
     "userProfile": "User Profile"
   },

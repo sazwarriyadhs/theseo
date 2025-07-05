@@ -6,6 +6,8 @@
   },
   "sidebar": {
     "title": "DigiMedia Optimizer",
+    "menuTitle": "Menu",
+    "menuDescription": "Navigasi utama aplikasi",
     "dashboard": "Dasbor",
     "aiKeywordTool": "Alat Kata Kunci AI",
     "aiContentOptimizer": "Pengoptimal Konten AI",
@@ -18,6 +20,7 @@
     "support": "Dukungan"
   },
   "header": {
+    "toggleSidebar": "Buka/Tutup Sidebar",
     "notifications": "Notifikasi",
     "userProfile": "Profil Pengguna"
   },
@@ -40,10 +43,10 @@
     "keywordRankings": {
       "title": "Peringkat Kata Kunci",
       "description": "Distribusi peringkat kata kunci.",
-      "top1-3": "Top 1-3",
-      "top4-10": "Top 4-10",
-      "top11-20": "Top 11-20",
-      "top21-50": "Top 21-50"
+      "top1-3": "Peringkat 1-3",
+      "top4-10": "Peringkat 4-10",
+      "top11-20": "Peringkat 11-20",
+      "top21-50": "Peringkat 21-50"
     },
     "topKeywords": {
       "title": "Kata Kunci Teratas"

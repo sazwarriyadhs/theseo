@@ -19,7 +19,7 @@ export default async function YouTubeOptimizationPage({ params: { lang } }: { pa
               {t.title}
             </span>
             <Button asChild variant="outline" size="sm">
-              <a href="https://www.youtube.com/@NgobrolDigitalYuk" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@NgobrolDigitalYuk">
                 <ExternalLink className="mr-2 h-4 w-4" />
                 {t.visitChannel}
               </a>

@@ -49,7 +49,7 @@ export default async function RootLayout({
       </head>
       <body className={cn('font-body antialiased', 'min-h-screen bg-background')}>
         <SidebarProvider>
-          <AppSidebar lang={params.lang} dictionary={dictionary.sidebar} />
+          <AppSidebar lang={params.lang} dictionary={dictionary} />
           <SidebarInset>
             <div className="flex min-h-screen flex-col">
               <AppHeader lang={params.lang} dictionary={dictionary} />

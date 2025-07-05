@@ -11,7 +11,7 @@ export function AppHeader({ lang, dictionary }: { lang: Locale, dictionary: any 
   return (
     <header className="sticky top-0 z-10 flex h-16 shrink-0 items-center justify-between border-b bg-background/80 px-4 backdrop-blur-sm sm:px-6 lg:px-8">
       <div className="flex items-center gap-4">
-        <SidebarTrigger className="md:hidden" />
+        <SidebarTrigger className="md:hidden" srText={t.toggleSidebar} />
       </div>
       <div className="flex items-center gap-2">
         <LanguageSwitcher lang={lang} dictionary={dictionary} />

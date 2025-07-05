@@ -1,3 +1,4 @@
+
 "use client"
 
 import * as React from "react"
@@ -168,6 +169,7 @@ const Sidebar = React.forwardRef<
     side?: "left" | "right"
     variant?: "sidebar" | "floating" | "inset"
     collapsible?: "offcanvas" | "icon" | "none"
+    dictionary?: any
   }
 >(
   (
@@ -177,6 +179,7 @@ const Sidebar = React.forwardRef<
       collapsible = "offcanvas",
       className,
       children,
+      dictionary,
       ...props
     },
     ref
@@ -213,10 +216,8 @@ const Sidebar = React.forwardRef<
             side={side}
           >
             <SheetHeader className="sr-only">
-              <SheetTitle>Menu</SheetTitle>
-              <SheetDescription>
-                Main navigation for the application.
-              </SheetDescription>
+              <SheetTitle>{dictionary?.menuTitle || 'Menu'}</SheetTitle>
+              <SheetDescription>{dictionary?.menuDescription || 'Main application navigation'}</SheetDescription>
             </SheetHeader>
             <div className="flex h-full w-full flex-col">{children}</div>
           </SheetContent>
@@ -273,8 +274,8 @@ Sidebar.displayName = "Sidebar"
 
 const SidebarTrigger = React.forwardRef<
   React.ElementRef<typeof Button>,
-  React.ComponentProps<typeof Button>
->(({ className, onClick, ...props }, ref) => {
+  React.ComponentProps<typeof Button> & { srText?: string }
+>(({ className, onClick, srText = "Toggle Sidebar", ...props }, ref) => {
   const { toggleSidebar } = useSidebar()
 
   return (
@@ -291,7 +292,7 @@ const SidebarTrigger = React.forwardRef<
       {...props}
     >
       <PanelLeft />
-      <span className="sr-only">Toggle Sidebar</span>
+      <span className="sr-only">{srText}</span>
     </Button>
   )
 })
