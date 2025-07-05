@@ -81,7 +81,7 @@ export function AppSidebar({ lang, dictionary }: { lang: Locale, dictionary: any
         <SidebarMenu>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip={dictionary.settings}>
-              <Link href="#">
+              <Link href={`/${lang}#settings`}>
                 <Settings className="h-4 w-4" />
                 <span>{dictionary.settings}</span>
               </Link>
@@ -89,7 +89,7 @@ export function AppSidebar({ lang, dictionary }: { lang: Locale, dictionary: any
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip={dictionary.support}>
-              <Link href="#">
+              <Link href={`/${lang}#support`}>
                 <LifeBuoy className="h-4 w-4" />
                 <span>{dictionary.support}</span>
               </Link>

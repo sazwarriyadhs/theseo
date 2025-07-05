@@ -44,7 +44,7 @@ export default function SocialMediaGeneratorClientPage({ dictionary }: { diction
     defaultValues: {
       websiteContent: '',
       platform: 'Twitter',
-      tone: 'Professional',
+      tone: t.form.defaultTone,
       numberOfPosts: 3,
     },
   });
@@ -116,10 +116,10 @@ export default function SocialMediaGeneratorClientPage({ dictionary }: { diction
                           </SelectTrigger>
                         </FormControl>
                         <SelectContent>
-                          <SelectItem value="Twitter">Twitter</SelectItem>
-                          <SelectItem value="Facebook">Facebook</SelectItem>
-                          <SelectItem value="LinkedIn">LinkedIn</SelectItem>
-                          <SelectItem value="Instagram">Instagram</SelectItem>
+                          <SelectItem value="Twitter">{t.platforms.twitter}</SelectItem>
+                          <SelectItem value="Facebook">{t.platforms.facebook}</SelectItem>
+                          <SelectItem value="LinkedIn">{t.platforms.linkedin}</SelectItem>
+                          <SelectItem value="Instagram">{t.platforms.instagram}</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
@@ -175,7 +175,7 @@ export default function SocialMediaGeneratorClientPage({ dictionary }: { diction
 
       {error && (
         <Alert variant="destructive" className="max-w-3xl mx-auto">
-          <AlertTitle>Error</AlertTitle>
+          <AlertTitle>{t.errorTitle}</AlertTitle>
           <AlertDescription>{error}</AlertDescription>
         </Alert>
       )}

@@ -64,7 +64,8 @@
       "keywordsTitle": "Kata Kunci yang Disarankan",
       "explanationTitle": "Penjelasan"
     },
-    "error": "Terjadi kesalahan saat menganalisis situs web. Silakan coba lagi."
+    "error": "Terjadi kesalahan saat menganalisis situs web. Silakan coba lagi.",
+    "errorTitle": "Kesalahan"
   },
   "contentOptimizer": {
     "title": "Pengoptimal Konten AI",
@@ -88,7 +89,8 @@
       "placeholderTitle": "Laporan Anda akan muncul di sini",
       "placeholderDescription": "Isi formulir untuk memulai."
     },
-    "error": "Terjadi kesalahan saat mengoptimalkan konten. Silakan coba lagi."
+    "error": "Terjadi kesalahan saat mengoptimalkan konten. Silakan coba lagi.",
+    "errorTitle": "Kesalahan"
   },
   "socialMediaGenerator": {
     "title": "Generator Postingan Media Sosial AI",
@@ -100,14 +102,22 @@
       "platformPlaceholder": "Pilih platform",
       "toneLabel": "Nada",
       "tonePlaceholder": "mis., Lucu, Informatif",
+      "defaultTone": "Profesional",
       "postsLabel": "Jumlah Postingan",
       "button": "Hasilkan Postingan",
       "loading": "Menghasilkan..."
     },
+    "platforms": {
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    },
     "results": {
       "title": "Postingan yang Dihasilkan"
     },
-    "error": "Terjadi kesalahan saat membuat postingan. Silakan coba lagi."
+    "error": "Terjadi kesalahan saat membuat postingan. Silakan coba lagi.",
+    "errorTitle": "Kesalahan"
   },
   "comingSoon": {
     "title": "Fitur Segera Hadir",

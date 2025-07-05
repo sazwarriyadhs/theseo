@@ -104,7 +104,7 @@ export default function KeywordAnalyzerClientPage({ dictionary }: { dictionary: 
 
       {error && (
         <Alert variant="destructive" className="max-w-3xl mx-auto">
-          <AlertTitle>Error</AlertTitle>
+          <AlertTitle>{t.errorTitle}</AlertTitle>
           <AlertDescription>{error}</AlertDescription>
         </Alert>
       )}

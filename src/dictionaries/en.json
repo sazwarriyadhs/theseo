@@ -64,7 +64,8 @@
       "keywordsTitle": "Suggested Keywords",
       "explanationTitle": "Explanation"
     },
-    "error": "An error occurred while analyzing the website. Please try again."
+    "error": "An error occurred while analyzing the website. Please try again.",
+    "errorTitle": "Error"
   },
   "contentOptimizer": {
     "title": "AI Content Optimizer",
@@ -88,7 +89,8 @@
       "placeholderTitle": "Your report will appear here",
       "placeholderDescription": "Fill out the form to get started."
     },
-    "error": "An error occurred while optimizing the content. Please try again."
+    "error": "An error occurred while optimizing the content. Please try again.",
+    "errorTitle": "Error"
   },
   "socialMediaGenerator": {
     "title": "AI Social Media Post Generator",
@@ -100,14 +102,22 @@
       "platformPlaceholder": "Select a platform",
       "toneLabel": "Tone",
       "tonePlaceholder": "e.g., Funny, Informative",
+      "defaultTone": "Professional",
       "postsLabel": "Number of Posts",
       "button": "Generate Posts",
       "loading": "Generating..."
     },
+    "platforms": {
+      "twitter": "Twitter",
+      "facebook": "Facebook",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    },
     "results": {
       "title": "Generated Posts"
     },
-    "error": "An error occurred while generating posts. Please try again."
+    "error": "An error occurred while generating posts. Please try again.",
+    "errorTitle": "Error"
   },
   "comingSoon": {
     "title": "Feature Coming Soon",
