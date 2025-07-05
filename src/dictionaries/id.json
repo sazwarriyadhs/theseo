@@ -125,8 +125,7 @@
   },
   "comingSoon": {
     "title": "Fitur Segera Hadir",
-    "competitorAnalyzer": "Alat ini akan memungkinkan Anda memasukkan domain pesaing dan menerima analisis terperinci tentang upaya SEO dan pemasaran konten mereka, membantu Anda mengidentifikasi peluang dan menyempurnakan strategi Anda sendiri untuk digimediakomunika.cloud.",
-    "googleAdsense": "Bagian ini akan menyediakan alat untuk mengintegrasikan Google Adsense dengan situs web Anda, menganalisis kinerja iklan, dan menawarkan saran berbasis AI untuk mengoptimalkan penempatan dan format iklan untuk pendapatan maksimum."
+    "competitorAnalyzer": "Alat ini akan memungkinkan Anda memasukkan domain pesaing dan menerima analisis terperinci tentang upaya SEO dan pemasaran konten mereka, membantu Anda mengidentifikasi peluang dan menyempurnakan strategi Anda sendiri untuk digimediakomunika.cloud."
   },
   "competitorAnalyzerPage": {
     "title": "Penganalisis Kompetitor",
@@ -140,7 +139,9 @@
   },
   "googleAdsensePage": {
     "title": "Google Adsense",
-    "description": "Saran integrasi dan optimisasi untuk Google Adsense."
+    "description": "Saran integrasi dan optimisasi untuk Google Adsense.",
+    "setupCompleteTitle": "Integrasi Selesai",
+    "setupCompleteDescription": "Google AdSense telah berhasil dikonfigurasi dan Iklan Otomatis diaktifkan. Iklan akan mulai muncul di situs Anda setelah perayap Google meninjau halaman Anda. Ini bisa memakan waktu beberapa jam hingga beberapa hari."
   },
   "youtubeOptimizationPage": {
     "title": "Generator Video YouTube AI",

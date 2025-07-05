@@ -125,8 +125,7 @@
   },
   "comingSoon": {
     "title": "Feature Coming Soon",
-    "competitorAnalyzer": "This tool will allow you to enter competitor domains and receive a detailed analysis of their SEO and content marketing efforts, helping you identify opportunities and refine your own strategy for digimediakomunika.cloud.",
-    "googleAdsense": "This section will provide tools to integrate Google Adsense with your website, analyze ad performance, and offer AI-driven suggestions to optimize ad placements and formats for maximum revenue."
+    "competitorAnalyzer": "This tool will allow you to enter competitor domains and receive a detailed analysis of their SEO and content marketing efforts, helping you identify opportunities and refine your own strategy for digimediakomunika.cloud."
   },
   "competitorAnalyzerPage": {
     "title": "Competitor Analyzer",
@@ -140,7 +139,9 @@
   },
   "googleAdsensePage": {
     "title": "Google Adsense",
-    "description": "Integration and optimization suggestions for Google Adsense."
+    "description": "Integration and optimization suggestions for Google Adsense.",
+    "setupCompleteTitle": "Integration Complete",
+    "setupCompleteDescription": "Google AdSense has been successfully configured and Auto Ads are enabled. Ads will begin to appear on your site as Google's crawlers review your pages. This may take a few hours to a few days."
   },
   "youtubeOptimizationPage": {
     "title": "AI YouTube Video Generator",

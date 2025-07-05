@@ -1,12 +1,12 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { DollarSign } from "lucide-react";
+import { DollarSign, CheckCircle2 } from "lucide-react";
 import { getDictionary } from "@/dictionaries/get-dictionary";
 import { Locale } from "@/i18n-config";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default async function GoogleAdsensePage({ params: { lang } }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(lang);
   const t = dictionary.googleAdsensePage;
-  const tComingSoon = dictionary.comingSoon;
   
   return (
     <div className="max-w-4xl mx-auto">
@@ -21,12 +21,13 @@ export default async function GoogleAdsensePage({ params: { lang } }: { params: 
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="p-8 text-center bg-secondary rounded-lg">
-            <h3 className="text-xl font-semibold text-secondary-foreground mb-2">{tComingSoon.title}</h3>
-            <p className="text-muted-foreground">
-              {tComingSoon.googleAdsense}
-            </p>
-          </div>
+          <Alert>
+            <CheckCircle2 className="h-4 w-4" />
+            <AlertTitle>{t.setupCompleteTitle}</AlertTitle>
+            <AlertDescription>
+              {t.setupCompleteDescription}
+            </AlertDescription>
+          </Alert>
         </CardContent>
       </Card>
     </div>

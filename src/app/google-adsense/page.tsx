@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { DollarSign } from "lucide-react";
+import { DollarSign, CheckCircle2 } from "lucide-react";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function GoogleAdsensePage() {
   return (
@@ -15,12 +16,13 @@ export default function GoogleAdsensePage() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <div className="p-8 text-center bg-secondary rounded-lg">
-            <h3 className="text-xl font-semibold text-secondary-foreground mb-2">Feature Coming Soon</h3>
-            <p className="text-muted-foreground">
-              This section will provide tools to integrate Google Adsense with your website, analyze ad performance, and offer AI-driven suggestions to optimize ad placements and formats for maximum revenue.
-            </p>
-          </div>
+          <Alert>
+            <CheckCircle2 className="h-4 w-4" />
+            <AlertTitle>Integration Complete</AlertTitle>
+            <AlertDescription>
+              Google AdSense has been successfully configured and Auto Ads are enabled. Ads will begin to appear on your site as Google's crawlers review your pages. This may take a few hours to a few days.
+            </AlertDescription>
+          </Alert>
         </CardContent>
       </Card>
     </div>
