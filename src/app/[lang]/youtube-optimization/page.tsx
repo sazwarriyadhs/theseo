@@ -3,7 +3,6 @@ import { Youtube, ExternalLink } from "lucide-react";
 import { getDictionary } from "@/dictionaries/get-dictionary";
 import { Locale } from "@/i18n-config";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 export default async function YouTubeOptimizationPage({ params: { lang } }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(lang);
@@ -20,10 +19,10 @@ export default async function YouTubeOptimizationPage({ params: { lang } }: { pa
               {t.title}
             </span>
             <Button asChild variant="outline" size="sm">
-              <Link href="https://www.youtube.com/@NgobrolDigitalYuk" target="_blank">
+              <a href="https://www.youtube.com/@NgobrolDigitalYuk" target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="mr-2 h-4 w-4" />
                 {t.visitChannel}
-              </Link>
+              </a>
             </Button>
           </CardTitle>
           <CardDescription className="text-base">
