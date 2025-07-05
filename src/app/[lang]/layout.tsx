@@ -31,6 +31,7 @@ export default async function RootLayout({
 }>) {
   const dictionary = await getDictionary(params.lang);
   const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+  const ADSENSE_PUBLISHER_ID = process.env.NEXT_PUBLIC_ADSENSE_PUBLISHER_ID;
 
   return (
     <html lang={params.lang} suppressHydrationWarning>
@@ -41,13 +42,15 @@ export default async function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <Script
-          id="adsbygoogle-script"
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2279227107562302"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        {ADSENSE_PUBLISHER_ID && (
+          <Script
+            id="adsbygoogle-script"
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_PUBLISHER_ID}`}
+            crossOrigin="anonymous"
+            strategy="afterInteractive"
+          />
+        )}
         {GA_MEASUREMENT_ID && (
           <>
             <Script
