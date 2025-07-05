@@ -1,0 +1,135 @@
+
+{
+  "metadata": {
+    "title": "DigiMedia Optimizer",
+    "description": "Optimisasi SEO dan SMO bertenaga AI untuk kehadiran digital Anda."
+  },
+  "sidebar": {
+    "title": "DigiMedia Optimizer",
+    "dashboard": "Dasbor",
+    "aiKeywordTool": "Alat Kata Kunci AI",
+    "aiContentOptimizer": "Pengoptimal Konten AI",
+    "aiPostGenerator": "Generator Postingan AI",
+    "competitorAnalyzer": "Penganalisis Kompetitor",
+    "googleAnalytics": "Google Analytics",
+    "googleAdsense": "Google Adsense",
+    "youtubeOptimization": "Optimisasi YouTube",
+    "settings": "Pengaturan",
+    "support": "Dukungan"
+  },
+  "header": {
+    "notifications": "Notifikasi",
+    "userProfile": "Profil Pengguna"
+  },
+  "languageSwitcher": {
+    "title": "Ganti bahasa"
+  },
+  "dashboard": {
+    "websiteScore": "Skor Situs Web",
+    "scoreUnit": "dari bulan lalu",
+    "organicTraffic": "Lalu Lintas Organik",
+    "trafficUnit": "dari bulan lalu",
+    "keywordsInTop10": "Kata Kunci di Top 10",
+    "keywordsUnit": "dari minggu lalu",
+    "socialEngagement": "Keterlibatan Sosial",
+    "engagementUnit": "dari bulan lalu",
+    "trafficOverview": {
+      "title": "Tinjauan Lalu Lintas",
+      "description": "Lalu lintas organik bulanan ke digimediakomunika.cloud."
+    },
+    "keywordRankings": {
+      "title": "Peringkat Kata Kunci",
+      "description": "Distribusi peringkat kata kunci.",
+      "top1-3": "Top 1-3",
+      "top4-10": "Top 4-10",
+      "top11-20": "Top 11-20",
+      "top21-50": "Top 21-50"
+    },
+    "topKeywords": {
+      "title": "Kata Kunci Teratas"
+    }
+  },
+  "keywordAnalyzer": {
+    "title": "Penganalisis Kata Kunci AI",
+    "description": "Masukkan URL situs web untuk menemukan kata kunci SEO dan SMO yang relevan, didukung oleh AI.",
+    "form": {
+      "label": "URL Situs Web",
+      "placeholder": "https://contoh.com",
+      "button": "Sarankan Kata Kunci",
+      "loading": "Menganalisis..."
+    },
+    "results": {
+      "title": "Hasil Analisis",
+      "description": "Berikut adalah kata kunci yang disarankan dan wawasan untuk situs web yang dianalisis.",
+      "keywordsTitle": "Kata Kunci yang Disarankan",
+      "explanationTitle": "Penjelasan"
+    },
+    "error": "Terjadi kesalahan saat menganalisis situs web. Silakan coba lagi."
+  },
+  "contentOptimizer": {
+    "title": "Pengoptimal Konten AI",
+    "description": "Tempelkan konten situs web Anda dan kata kunci target untuk mendapatkan saran optimisasi bertenaga AI.",
+    "form": {
+      "contentLabel": "Konten Situs Web",
+      "contentPlaceholder": "Tempelkan konten situs web Anda di sini...",
+      "keywordsLabel": "Kata Kunci Target",
+      "keywordsPlaceholder": "mis., pemasaran digital, SEO, media sosial",
+      "button": "Dapatkan Rekomendasi",
+      "loading": "Mengoptimalkan..."
+    },
+    "results": {
+      "title": "Laporan Optimisasi",
+      "description": "Berikut adalah rekomendasi AI untuk konten Anda.",
+      "seo": "Rekomendasi SEO",
+      "readability": "Peningkatan Keterbacaan",
+      "engagement": "Saran Keterlibatan",
+      "loadingTitle": "AI sedang menganalisis konten Anda...",
+      "loadingDescription": "Ini mungkin memakan waktu sejenak.",
+      "placeholderTitle": "Laporan Anda akan muncul di sini",
+      "placeholderDescription": "Isi formulir untuk memulai."
+    },
+    "error": "Terjadi kesalahan saat mengoptimalkan konten. Silakan coba lagi."
+  },
+  "socialMediaGenerator": {
+    "title": "Generator Postingan Media Sosial AI",
+    "description": "Berikan beberapa konten dari situs web Anda untuk menghasilkan postingan media sosial yang menarik.",
+    "form": {
+      "contentLabel": "Sumber Konten",
+      "contentPlaceholder": "Tempelkan postingan blog, deskripsi produk, atau konten lainnya di sini...",
+      "platformLabel": "Platform",
+      "platformPlaceholder": "Pilih platform",
+      "toneLabel": "Nada",
+      "tonePlaceholder": "mis., Lucu, Informatif",
+      "postsLabel": "Jumlah Postingan",
+      "button": "Hasilkan Postingan",
+      "loading": "Menghasilkan..."
+    },
+    "results": {
+      "title": "Postingan yang Dihasilkan"
+    },
+    "error": "Terjadi kesalahan saat membuat postingan. Silakan coba lagi."
+  },
+  "comingSoon": {
+    "title": "Fitur Segera Hadir",
+    "competitorAnalyzer": "Alat ini akan memungkinkan Anda memasukkan domain pesaing dan menerima analisis terperinci tentang upaya SEO dan pemasaran konten mereka, membantu Anda mengidentifikasi peluang dan menyempurnakan strategi Anda sendiri untuk digimediakomunika.cloud.",
+    "googleAnalytics": "Hubungkan akun Google Analytics Anda dengan mulus untuk melihat metrik utama situs web langsung di dasbor DigiMedia Optimizer. Kami akan menyediakan laporan yang disederhanakan dan wawasan yang dapat ditindaklanjuti berdasarkan data lalu lintas Anda.",
+    "googleAdsense": "Bagian ini akan menyediakan alat untuk mengintegrasikan Google Adsense dengan situs web Anda, menganalisis kinerja iklan, dan menawarkan saran berbasis AI untuk mengoptimalkan penempatan dan format iklan untuk pendapatan maksimum.",
+    "youtubeOptimization": "Hubungkan saluran YouTube digimediakomunika.cloud Anda untuk mendapatkan saran berbasis AI untuk judul video, deskripsi, tag, dan ide konten untuk meningkatkan jumlah penayangan dan pertumbuhan pelanggan Anda."
+  },
+  "competitorAnalyzerPage": {
+    "title": "Penganalisis Kompetitor",
+    "description": "Dapatkan wawasan tentang strategi pesaing Anda dengan menganalisis kata kunci dan konten mereka."
+  },
+  "googleAnalyticsPage": {
+    "title": "Google Analytics",
+    "description": "Integrasi untuk Google Analytics."
+  },
+  "googleAdsensePage": {
+    "title": "Google Adsense",
+    "description": "Saran integrasi dan optimisasi untuk Google Adsense."
+  },
+  "youtubeOptimizationPage": {
+    "title": "Optimisasi Saluran YouTube",
+    "description": "Saran integrasi dan optimisasi untuk saluran YouTube Anda."
+  }
+}

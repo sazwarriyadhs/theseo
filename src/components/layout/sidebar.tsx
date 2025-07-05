@@ -26,43 +26,49 @@ import {
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Separator } from '../ui/separator';
+import { Locale } from '@/i18n-config';
 
-const mainNavItems = [
-  { href: '/', label: 'Dashboard', icon: LayoutDashboard },
-  { href: '/keyword-analyzer', label: 'AI Keyword Tool', icon: Search },
-  { href: '/content-optimizer', label: 'AI Content Optimizer', icon: FileText },
-  { href: '/social-media-generator', label: 'AI Post Generator', icon: Megaphone },
-];
-
-const secondaryNavItems = [
-  { href: '/competitor-analyzer', label: 'Competitor Analyzer', icon: Users },
-  { href: '/google-analytics', label: 'Google Analytics', icon: LineChart },
-  { href: '/google-adsense', label: 'Google Adsense', icon: DollarSign },
-  { href: '/youtube-optimization', label: 'YouTube Optimization', icon: Youtube },
-];
-
-export function AppSidebar() {
+export function AppSidebar({ lang, dictionary }: { lang: Locale, dictionary: any }) {
   const pathname = usePathname();
 
+  const mainNavItems = [
+    { href: '/', label: dictionary.dashboard, icon: LayoutDashboard },
+    { href: '/keyword-analyzer', label: dictionary.aiKeywordTool, icon: Search },
+    { href: '/content-optimizer', label: dictionary.aiContentOptimizer, icon: FileText },
+    { href: '/social-media-generator', label: dictionary.aiPostGenerator, icon: Megaphone },
+  ];
+
+  const secondaryNavItems = [
+    { href: '/competitor-analyzer', label: dictionary.competitorAnalyzer, icon: Users },
+    { href: '/google-analytics', label: dictionary.googleAnalytics, icon: LineChart },
+    { href: '/google-adsense', label: dictionary.googleAdsense, icon: DollarSign },
+    { href: '/youtube-optimization', label: dictionary.youtubeOptimization, icon: Youtube },
+  ];
+
   const renderNavItems = (items: typeof mainNavItems) =>
-    items.map((item) => (
-      <SidebarMenuItem key={item.href}>
-        <SidebarMenuButton asChild isActive={pathname === item.href} tooltip={item.label}>
-          <Link href={item.href}>
-            <item.icon className="h-4 w-4" />
-            <span>{item.label}</span>
-          </Link>
-        </SidebarMenuButton>
-      </SidebarMenuItem>
-    ));
+    items.map((item) => {
+      const href = `/${lang}${item.href === '/' ? '' : item.href}`;
+      // A more robust check for active state
+      const isActive = item.href === '/' ? pathname === `/${lang}` : pathname.startsWith(href);
+      return (
+        <SidebarMenuItem key={item.href}>
+          <SidebarMenuButton asChild isActive={isActive} tooltip={item.label}>
+            <Link href={href}>
+              <item.icon className="h-4 w-4" />
+              <span>{item.label}</span>
+            </Link>
+          </SidebarMenuButton>
+        </SidebarMenuItem>
+      );
+    });
 
   return (
     <Sidebar variant="sidebar" className="border-sidebar-border/50">
       <SidebarHeader>
-        <Link href="/" className="flex items-center gap-2.5">
+        <Link href={`/${lang}`} className="flex items-center gap-2.5">
           <Icons.logo className="h-7 w-7 text-primary" />
           <span className="truncate text-lg font-semibold tracking-tight text-sidebar-foreground">
-            DigiMedia Optimizer
+            {dictionary.title}
           </span>
         </Link>
       </SidebarHeader>
@@ -74,18 +80,18 @@ export function AppSidebar() {
       <SidebarFooter>
         <SidebarMenu>
           <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="Settings">
+            <SidebarMenuButton asChild tooltip={dictionary.settings}>
               <Link href="#">
                 <Settings className="h-4 w-4" />
-                <span>Settings</span>
+                <span>{dictionary.settings}</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>
           <SidebarMenuItem>
-            <SidebarMenuButton asChild tooltip="Support">
+            <SidebarMenuButton asChild tooltip={dictionary.support}>
               <Link href="#">
                 <LifeBuoy className="h-4 w-4" />
-                <span>Support</span>
+                <span>{dictionary.support}</span>
               </Link>
             </SidebarMenuButton>
           </SidebarMenuItem>

@@ -1,0 +1,135 @@
+
+{
+  "metadata": {
+    "title": "DigiMedia Optimizer",
+    "description": "AI-powered SEO and SMO optimization for your digital presence."
+  },
+  "sidebar": {
+    "title": "DigiMedia Optimizer",
+    "dashboard": "Dashboard",
+    "aiKeywordTool": "AI Keyword Tool",
+    "aiContentOptimizer": "AI Content Optimizer",
+    "aiPostGenerator": "AI Post Generator",
+    "competitorAnalyzer": "Competitor Analyzer",
+    "googleAnalytics": "Google Analytics",
+    "googleAdsense": "Google Adsense",
+    "youtubeOptimization": "YouTube Optimization",
+    "settings": "Settings",
+    "support": "Support"
+  },
+  "header": {
+    "notifications": "Notifications",
+    "userProfile": "User Profile"
+  },
+  "languageSwitcher": {
+    "title": "Switch language"
+  },
+  "dashboard": {
+    "websiteScore": "Website Score",
+    "scoreUnit": "from last month",
+    "organicTraffic": "Organic Traffic",
+    "trafficUnit": "from last month",
+    "keywordsInTop10": "Keywords in Top 10",
+    "keywordsUnit": "from last week",
+    "socialEngagement": "Social Engagement",
+    "engagementUnit": "from last month",
+    "trafficOverview": {
+      "title": "Traffic Overview",
+      "description": "Monthly organic traffic to digimediakomunika.cloud."
+    },
+    "keywordRankings": {
+      "title": "Keyword Rankings",
+      "description": "Distribution of keyword rankings.",
+      "top1-3": "Top 1-3",
+      "top4-10": "Top 4-10",
+      "top11-20": "Top 11-20",
+      "top21-50": "Top 21-50"
+    },
+    "topKeywords": {
+      "title": "Top Keywords"
+    }
+  },
+  "keywordAnalyzer": {
+    "title": "AI Keyword Analyzer",
+    "description": "Enter a website URL to discover relevant SEO and SMO keywords, powered by AI.",
+    "form": {
+      "label": "Website URL",
+      "placeholder": "https://example.com",
+      "button": "Suggest Keywords",
+      "loading": "Analyzing..."
+    },
+    "results": {
+      "title": "Analysis Results",
+      "description": "Here are the suggested keywords and insights for the analyzed website.",
+      "keywordsTitle": "Suggested Keywords",
+      "explanationTitle": "Explanation"
+    },
+    "error": "An error occurred while analyzing the website. Please try again."
+  },
+  "contentOptimizer": {
+    "title": "AI Content Optimizer",
+    "description": "Paste your website content and target keywords to get AI-powered optimization advice.",
+    "form": {
+      "contentLabel": "Website Content",
+      "contentPlaceholder": "Paste your website content here...",
+      "keywordsLabel": "Target Keywords",
+      "keywordsPlaceholder": "e.g., digital marketing, SEO, social media",
+      "button": "Get Recommendations",
+      "loading": "Optimizing..."
+    },
+    "results": {
+      "title": "Optimization Report",
+      "description": "Here are the AI's recommendations for your content.",
+      "seo": "SEO Recommendations",
+      "readability": "Readability Improvements",
+      "engagement": "Engagement Suggestions",
+      "loadingTitle": "AI is analyzing your content...",
+      "loadingDescription": "This may take a moment.",
+      "placeholderTitle": "Your report will appear here",
+      "placeholderDescription": "Fill out the form to get started."
+    },
+    "error": "An error occurred while optimizing the content. Please try again."
+  },
+  "socialMediaGenerator": {
+    "title": "AI Social Media Post Generator",
+    "description": "Provide some content from your website to generate engaging social media posts.",
+    "form": {
+      "contentLabel": "Content Source",
+      "contentPlaceholder": "Paste a blog post, product description, or any other content here...",
+      "platformLabel": "Platform",
+      "platformPlaceholder": "Select a platform",
+      "toneLabel": "Tone",
+      "tonePlaceholder": "e.g., Funny, Informative",
+      "postsLabel": "Number of Posts",
+      "button": "Generate Posts",
+      "loading": "Generating..."
+    },
+    "results": {
+      "title": "Generated Posts"
+    },
+    "error": "An error occurred while generating posts. Please try again."
+  },
+  "comingSoon": {
+    "title": "Feature Coming Soon",
+    "competitorAnalyzer": "This tool will allow you to enter competitor domains and receive a detailed analysis of their SEO and content marketing efforts, helping you identify opportunities and refine your own strategy for digimediakomunika.cloud.",
+    "googleAnalytics": "Seamlessly connect your Google Analytics account to view key website metrics directly within the DigiMedia Optimizer dashboard. We'll provide simplified reports and actionable insights based on your traffic data.",
+    "googleAdsense": "This section will provide tools to integrate Google Adsense with your website, analyze ad performance, and offer AI-driven suggestions to optimize ad placements and formats for maximum revenue.",
+    "youtubeOptimization": "Connect your digimediakomunika.cloud YouTube channel to get AI-powered suggestions for video titles, descriptions, tags, and content ideas to boost your views and subscriber growth."
+  },
+  "competitorAnalyzerPage": {
+    "title": "Competitor Analyzer",
+    "description": "Gain insights into your competitors' strategies by analyzing their keywords and content."
+  },
+  "googleAnalyticsPage": {
+    "title": "Google Analytics",
+    "description": "Integration for Google Analytics."
+  },
+  "googleAdsensePage": {
+    "title": "Google Adsense",
+    "description": "Integration and optimization suggestions for Google Adsense."
+  },
+  "youtubeOptimizationPage": {
+    "title": "YouTube Channel Optimization",
+    "description": "Integration and optimization suggestions for your YouTube channel."
+  }
+}
